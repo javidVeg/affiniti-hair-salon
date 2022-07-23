@@ -1,4 +1,4 @@
-import { Link, Grid } from "@mui/material";
+import { Link, Grid,Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import AffinitiLogo from "../assets/Affiniti-Logo-White.png";
@@ -49,18 +49,24 @@ export const Footer = () => {
                 <div className="grid place-items-center">
                   <img src={AffinitiLogo} alt="logo" width="80%" />
                 </div>
-                <div className="flex flex-row">
-                  <BsFillTelephoneForwardFill className='ml-3 mr-3 mt-1 block' />
+                <div className="grid place-items-center">
+                    <Typography variant="caption" sx={{ fontStyle: "italic"}}>
+                        Whittiers Finest Loft Salon
+                    </Typography>
+                </div>
+                <div className="flex flex-row p-2">
+                  <BsFillTelephoneForwardFill className="ml-3 mr-3 mt-1 block" />
                   <a href="tel:123-456-7890">123-456-7890</a>
                 </div>
-                <div className="flex flex-row">
-                  <SiMinutemailer className='ml-3 mr-3 mt-1 block'/>
-                  <a href = "mailto: abc@example.com">abc@example.com</a>
-                  
+                <div className="flex flex-row p-2">
+                  <SiMinutemailer className="ml-3 mr-3 mt-1 block" />
+                  <a href="mailto: abc@example.com">abc@example.com</a>
                 </div>
-                <div className="flex flex-row">
-                  <GrMapLocation className='ml-3 mr-3 mt-1 block'/>
-                  <a href = "https://maps.apple.com/?address=12612%20Philadelphia%20St,%20Unit%20A,%20Whittier,%20CA%2090601,%20United%20States&auid=5589580471039113701&ll=33.978826,-118.041632&lsp=9902&q=Affiniti%20Hair%20Salon&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhBnCgQIChAACgQIUhABCgQIVRAPCgQIWRACCgUIpAEQARImKUoDP5u3/EBAMUUK2XwDg13AOcjYZPfd/UBAQZUMMQBSgl3AUAQ%3D">12612 Philadelphia St UNIT A, Whittier, CA 90601</a>
+                <div className="flex flex-row p-2">
+                  <GrMapLocation className="ml-3 mr-3 mt-1 block" />
+                  <a href="https://maps.apple.com/?address=12612%20Philadelphia%20St,%20Unit%20A,%20Whittier,%20CA%2090601,%20United%20States&auid=5589580471039113701&ll=33.978826,-118.041632&lsp=9902&q=Affiniti%20Hair%20Salon&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhBnCgQIChAACgQIUhABCgQIVRAPCgQIWRACCgUIpAEQARImKUoDP5u3/EBAMUUK2XwDg13AOcjYZPfd/UBAQZUMMQBSgl3AUAQ%3D">
+                    12612 Philadelphia St UNIT A, Whittier, CA 90601
+                  </a>
                 </div>
               </Box>
               {/* <Box>

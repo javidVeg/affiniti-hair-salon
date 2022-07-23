@@ -3,6 +3,7 @@ import videoBG from "../src/assets/production ID_5147455.mp4";
 import AffinitiLogo from "../src/assets/Affiniti-Logo.png";
 // import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
+import { LocationCard } from "./components/LocationCard";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <div className="absolute w-full h-auto top-0 mt-40 flex flex-col items-center">
         <img src={AffinitiLogo} alt="logo" width="80%" />
         <div className='flex-col justify-center items-center'>
-        
+        <LocationCard/>
         </div>
       </div>
       <Footer/>
