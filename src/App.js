@@ -16,21 +16,21 @@ function App() {
       <div className="absolute w-full h-auto top-0 mt-40 flex flex-col items-center">
         <img src={AffinitiLogo} alt="logo" width="80%" />
         <div className="flex-col justify-center items-center">
-          <div className='grid place-content-center mb-5 mt-5'>
-          <About />
+          <div className="grid place-content-center mb-5 mt-5">
+            <About />
           </div>
-          <div className='grid place-content-center mb-5 mt-5'>
-          <LocationCard />
-          </div>
-          <div className="mt-5 grid place-content-center">
-          <BookNowButton />
+          <div className="grid place-content-center mb-5 mt-5">
+            <LocationCard />
           </div>
           <div className="mt-5 grid place-content-center">
-          <StylistCard />
+            <BookNowButton />
           </div>
         </div>
+        <div >
+          <StylistCard />
+        </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
