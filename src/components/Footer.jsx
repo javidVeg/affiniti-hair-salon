@@ -1,10 +1,11 @@
-import { Link, Grid,Typography } from "@mui/material";
+import { Link, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import AffinitiLogo from "../assets/Affiniti-Logo-White.png";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
 import { GrMapLocation } from "react-icons/gr";
+import { AiFillInstagram } from "react-icons/ai";
 
 export const Footer = () => {
   return (
@@ -50,24 +51,39 @@ export const Footer = () => {
                   <img src={AffinitiLogo} alt="logo" width="80%" />
                 </div>
                 <div className="grid place-items-center">
-                    <Typography variant="caption" sx={{ fontStyle: "italic"}}>
-                        Whittiers Finest Loft Salon
-                    </Typography>
+                  <Typography variant="caption" sx={{ fontStyle: "italic" }}>
+                    Whittiers Finest Loft Salon
+                  </Typography>
                 </div>
                 <div className="flex flex-row p-2">
-                  <BsFillTelephoneForwardFill className="ml-3 mr-3 mt-1 block" />
+                  <BsFillTelephoneForwardFill
+                    size="6%"
+                    className="ml-3 mr-3 mt-1 block"
+                  />
                   <a href="tel:123-456-7890">123-456-7890</a>
                 </div>
                 <div className="flex flex-row p-2">
-                  <SiMinutemailer className="ml-3 mr-3 mt-1 block" />
+                  <SiMinutemailer size="7%" className="ml-3 mr-3 mt-1 block" />
                   <a href="mailto: abc@example.com">abc@example.com</a>
                 </div>
                 <div className="flex flex-row p-2">
-                  <GrMapLocation className="ml-3 mr-3 mt-1 block" />
+                  <GrMapLocation size="10%" className="ml-3 mr-3 mt-1 block" />
                   <a href="https://maps.apple.com/?address=12612%20Philadelphia%20St,%20Unit%20A,%20Whittier,%20CA%2090601,%20United%20States&auid=5589580471039113701&ll=33.978826,-118.041632&lsp=9902&q=Affiniti%20Hair%20Salon&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhBnCgQIChAACgQIUhABCgQIVRAPCgQIWRACCgUIpAEQARImKUoDP5u3/EBAMUUK2XwDg13AOcjYZPfd/UBAQZUMMQBSgl3AUAQ%3D">
                     12612 Philadelphia St UNIT A, Whittier, CA 90601
                   </a>
                 </div>
+
+                <div className="flex flex-row p-1 pb-2">
+                  <AiFillInstagram
+                    size="8%"
+                    className="ml-3 mr-3 block"
+                    href="https://www.instagram.com/affinitihairsalon/?hl=en"
+                  />
+                  <a href="https://www.instagram.com/affinitihairsalon/?hl=en">
+                    Click to follow us on Instagram!
+                  </a>
+                </div>
+
               </Box>
               {/* <Box>
                 <Link>Contact</Link>
