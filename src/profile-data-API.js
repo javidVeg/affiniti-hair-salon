@@ -19,7 +19,7 @@ export const getData = async () => {
       emoji: "🧸",
       role: "Stylist",
       snippet: "A small sentance that describes themselves",
-      igLink: "",
+      igLink: "https://www.instagram.com/affinitihairsalon/?hl=en",
       twLink: "",
       fbLink: "",
       tikLink: ""
@@ -44,7 +44,7 @@ export const getData = async () => {
       lastName: "Mendass",
       emoji: "🕷",
       role: "Stylist",
-      snippet: "somthing short sentance that drives themselves",
+      snippet: "Somthing short sentance that drives themselves",
       igLink: "",
       twLink: "",
       fbLink: "",
