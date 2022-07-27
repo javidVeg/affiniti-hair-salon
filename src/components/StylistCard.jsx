@@ -33,7 +33,7 @@ export const StylistCard = () => {
   if (!data) return <p>No profile data</p>;
   return (
     <div className="grid place-items-center mt-4">
-        <Typography variant="h2" color="white" fontFamily="monospace" fontStyle="italic">
+        <Typography variant="h2" color="black" fontFamily="monospace" fontStyle="italic">
             Meet The Affiniti Team
         </Typography>
       <div className=" grid grid-cols-4">

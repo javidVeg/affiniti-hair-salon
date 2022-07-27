@@ -1,60 +1,72 @@
-import React, { useRef } from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import videoBG from "../src/assets/production ID_5147455.mp4";
+import React, { useEffect } from "react";
+import videoBG from "../src/assets/production ID_4611893.mp4";
 import AffinitiLogo from "../src/assets/Affiniti-Logo.png";
+// import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
 import { LocationCard } from "./components/LocationCard";
 import { BookNowButton } from "./components/BookNowButton";
 import { About } from "./components/About";
 import { StylistCard } from "./components/StylistCard";
-import { motion } from "framer-motion"
-
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function App() {
-  const ref = useRef();
+  const { ref, inView } = useInView();
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring", duration: 1, bounce: 0.3
+        }
+      });
+    }
+    if(!inView){
+      animation.start({x:'-100vw'})
+    }
+    console.log("use effect hook, inView=", inView);
+  }, [inView]);
 
   return (
     <div>
-      <Parallax pages={4} ref={ref}>
-        <ParallaxLayer
-          offset={0}
-          speed={1}
-          factor={2}
-          onClick={() => ref.current.scrollTo(2)}
-        >
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-30 "></div>
-          <video src={videoBG} autoPlay loop muted />
-        </ParallaxLayer>
-        <ParallaxLayer sticky={{ start: 0, end: 0.5 }}>
-          <div className="absolute w-full h-auto top-0 mt-40 flex flex-col items-center">
-            <img src={AffinitiLogo} alt="logo" width="95%" />
+      <div className="fixed top-0 left-0 w-full h-full"></div>
+      <section className="h-screen box-border ">
+        {/* <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-40 "></div> */}
+        <video src={videoBG} autoPlay loop muted />
+        <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
+          <div className="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-40 "></div>
+          <div className="absolute grid h-screen place-items-center">
+            <img src={AffinitiLogo} alt="logo" width="80%" />
           </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.5} factor={3}>
-          <div className="absolute w-full h-auto top-0 mt-40 flex flex-col items-center">
-            <div className="flex-col justify-center items-center">
-            <div className="grid place-content-center mb-5 mt-5">
-                <About />
-              </div>
-              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: 0.2}} className="grid place-content-center mb-5 mt-5">
-                <LocationCard />
-              </motion.div>
-              <div className="mt-5 grid place-content-center">
-                <BookNowButton />
-              </div>
-            </div>
-            <div>
-              <StylistCard />
-            </div>
+        </div>
+      </section>
+      <section  className="h-screen box-border">
+        <div ref={ref} className="mt-40 flex flex-col justify-center items-center">
+          <motion.div
+            animate={animation}
+            className="grid place-content-center mb-5 mt-5"
+          >
+            <About />
+          </motion.div>
+          <div className="grid place-content-center mb-5 mt-5">
+            <LocationCard />
           </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={3.4} speed={0.5} factor={2}>
-          <div>
+          <div className="mt-5 grid place-content-center">
+            <BookNowButton />
+          </div>
+        </div>
+        <div>
+          <StylistCard />
+        </div>
+      </section>
+      {/* <section>
+        <footer>
           <Footer />
-          </div>
-        </ParallaxLayer>
-        
-      </Parallax>
+        </footer>
+      </section> */}
     </div>
   );
 }
