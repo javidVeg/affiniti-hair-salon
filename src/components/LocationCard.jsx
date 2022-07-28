@@ -4,6 +4,7 @@ import AffinitiMap from "../assets/Affiniti-Map.png";
 import { MdLocationOn } from "react-icons/md";
 import { BsPhoneFill } from "react-icons/bs";
 
+
 export const LocationCard = () => {
   return (
     <div>

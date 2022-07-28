@@ -11,25 +11,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function App() {
-  const { ref, inView } = useInView();
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if(inView){
-      animation.start({
-        x: 0,
-        transition: {
-          type: "spring", duration: 1, bounce: 0.3
-        }
-      });
-    }
-    if(!inView){
-      animation.start({x:'-100vw'})
-    }
-    console.log("use effect hook, inView=", inView);
-  }, [inView]);
-
   return (
     <div>
       <div className="fixed top-0 left-0 w-full h-full"></div>
@@ -43,14 +24,11 @@ function App() {
           </div>
         </div>
       </section>
-      <section  className="h-screen box-border">
-        <div ref={ref} className="mt-40 flex flex-col justify-center items-center">
-          <motion.div
-            animate={animation}
-            className="grid place-content-center mb-5 mt-5"
-          >
+      <section className="h-screen box-border">
+        <div className="mt-40 flex flex-col justify-center items-center">
+          <div className="grid place-content-center mb-5 mt-5">
             <About />
-          </motion.div>
+          </div>
           <div className="grid place-content-center mb-5 mt-5">
             <LocationCard />
           </div>
@@ -58,9 +36,11 @@ function App() {
             <BookNowButton />
           </div>
         </div>
-        <div>
+        <motion.div
+          onHoverStart={()=> console.log("Hover Start")}
+            onHoverEnd={()=> console.log("Hover End")}>
           <StylistCard />
-        </div>
+        </motion.div>
       </section>
       {/* <section>
         <footer>

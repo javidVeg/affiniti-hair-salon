@@ -1,18 +1,42 @@
 import { Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   createTheme,
   responsiveFontSizes,
   ThemeProvider,
 } from "@mui/material/styles";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export const About = () => {
   //? @ CREATETHEME ALLOWS FOR RESPONSIVE FONT SIZES IN THEME PROVIDER
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
 
+  //! @ THIS ENABLES SCROLL ANIMATIONS
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({ x: "-100vw" });
+    }
+    console.log("use effect hook, inView=", inView);
+  }, [inView]);
+  //! @ -----------
+
   return (
-    <div>
+    <motion.div ref={ref} animate={animation}>
       <ThemeProvider theme={theme}>
         <Typography
           variant="h4"
@@ -46,6 +70,6 @@ export const About = () => {
           </Typography>
         </div>
       </ThemeProvider>
-    </div>
+    </motion.div>
   );
 };

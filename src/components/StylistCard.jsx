@@ -11,6 +11,7 @@ export const StylistCard = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
 
+  //? @ THIS GETS DATA FROM DATA SHEET
   useEffect(() => {
     setLoading(true);
     getData().then((data) => {
@@ -19,18 +20,11 @@ export const StylistCard = () => {
     });
   }, []);
 
-  // useEffect(() => {
-
-  //   fetch('/API/profile-data')
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setData(data)
-  //       setLoading(false)
-  //     })
-  // }, [])
 
   if (isLoading) return <p>Loading...</p>;
   if (!data) return <p>No profile data</p>;
+
+
   return (
     <div className="grid place-items-center mt-4">
         <Typography variant="h2" color="black" fontFamily="monospace" fontStyle="italic">
@@ -38,7 +32,12 @@ export const StylistCard = () => {
         </Typography>
       <div className=" grid grid-cols-4">
         {data.map((info) => (
-          <div className="m-8">
+          <motion.div 
+            whileHover={{scale:1.1, originX: 0, originY: 0, }}
+            transition={{ type: "spring", stiffness: 300 }}
+            onHoverStart={()=> console.log("Hover Start")}
+            onHoverEnd={()=> console.log("Hover End")}
+            className="m-8 bg-red-500">
             <Card sx={{ maxWidth: 345, opacity: "inherit", borderRadius: 2 }}>
               <div className="grid place-items-center m-10 ">
                 <Avatar
@@ -55,9 +54,9 @@ export const StylistCard = () => {
                     {info.firstName} {info.lastName}
                   </Typography>
                 </div>
-                <motion.div initial={{x: -100}} animate={{x:0}}>
+                <div>
                   <Typography variant="h4">{info.emoji}</Typography>
-                </motion.div>
+                </div>
                 <div>
                   <Typography
                     variant="caption"
@@ -84,7 +83,7 @@ export const StylistCard = () => {
                 </div>
               </div>
             </Card>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
