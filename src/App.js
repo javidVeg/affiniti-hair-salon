@@ -12,6 +12,7 @@ import { useInView } from "react-intersection-observer";
 
 function App() {
   return (
+    // {note}
     <div>
       <div className="fixed top-0 left-0 w-full h-full"></div>
       <section className="h-screen box-border ">
