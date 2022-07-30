@@ -13,7 +13,6 @@ import { useInView } from "react-intersection-observer";
 function App() {
   return (
     <div>
-      <div className="fixed top-0 left-0 w-full h-full"></div>
       <section className="h-screen box-border ">
         {/* <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-40 "></div> */}
         <video src={videoBG} autoPlay loop muted />
