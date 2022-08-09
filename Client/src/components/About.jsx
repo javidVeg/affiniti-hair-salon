@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Divider, Typography } from "@mui/material";
 import React, { useEffect } from "react";
 import {
   createTheme,
@@ -29,23 +29,24 @@ export const About = () => {
       });
     }
     if (!inView) {
-      animation.start({ x: "-100vw" });
+      animation.start({ x: -300 });
     }
     console.log("use effect hook, inView=", inView);
   }, [inView]);
-  //! @ -----------
+  //! @ -----------_
 
   return (
     <motion.div ref={ref} animate={animation}>
       <ThemeProvider theme={theme}>
         <Typography
-          variant="h4"
+          variant="h3"
           textAlign="center"
           sx={{ fontFamily: "monospace" }}
         >
           Trust no one else with the way you look.
         </Typography>
         <div className="mt-3">
+          <Divider variant="middle" >
           <Typography
             variant="h5"
             textAlign="center"
@@ -54,6 +55,7 @@ export const About = () => {
           >
             WELCOME TO AFFINITI
           </Typography>
+          </Divider>
         </div>
         <div className="pl-20 pr-20 mt-4">
           <Typography textAlign="center">

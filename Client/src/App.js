@@ -9,13 +9,12 @@ import { About } from "./components/About";
 import { StylistCard } from "./components/StylistCard";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Reviews } from "./components/Reviews";
 
 function App() {
   return (
-    // {note}
-    <div>
+    <div className="flex flex-col min-h-screen">
       <section className="h-screen box-border ">
-        {/* <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-40 "></div> */}
         <video src={videoBG} autoPlay loop muted />
         <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
           <div className="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-40 "></div>
@@ -24,29 +23,28 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="h-screen box-border">
-        <div className="mt-40 flex flex-col justify-center items-center">
-          <div className="grid place-content-center mb-5 mt-5">
+      <section >
+        <div className="flex flex-col justify-center items-center">
+          <div className="grid place-content-center mb-5 mt-20">
             <About />
           </div>
+        <div className="mt-10 grid place-content-center ">
+          <Reviews/>
+        </div>
+        </div>
+        <motion.div>
+          <StylistCard />
+        </motion.div>
           <div className="grid place-content-center mb-5 mt-5">
             <LocationCard />
           </div>
           <div className="mt-5 grid place-content-center">
             <BookNowButton />
           </div>
-        </div>
-        <motion.div
-          onHoverStart={()=> console.log("Hover Start")}
-            onHoverEnd={()=> console.log("Hover End")}>
-          <StylistCard />
-        </motion.div>
       </section>
-      {/* <section>
-        <footer>
-          <Footer />
-        </footer>
-      </section> */}
+      <footer className="mt-10">
+        <Footer />
+      </footer>
     </div>
   );
 }

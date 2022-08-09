@@ -35,9 +35,7 @@ export const StylistCard = () => {
           <motion.div 
             whileHover={{scale:1.1, originX: 0, originY: 0, }}
             transition={{ type: "spring", stiffness: 300 }}
-            onHoverStart={()=> console.log("Hover Start")}
-            onHoverEnd={()=> console.log("Hover End")}
-            className="m-8 bg-red-500">
+            className="m-8">
             <Card sx={{ maxWidth: 345, opacity: "inherit", borderRadius: 2 }}>
               <div className="grid place-items-center m-10 ">
                 <Avatar
