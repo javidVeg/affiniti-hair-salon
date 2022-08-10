@@ -9,12 +9,10 @@ import {
   Box,
   Button,
 } from "@mui/material";
-import TestImage from "../assets/people/Natalie.jpg";
 import { BsStarFill } from "react-icons/bs";
 import { FaYelp } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import axios from "axios";
 
 export const Reviews = () => {
   //! @ THIS ENABLES SCROLL ANIMATIONS

@@ -41,7 +41,7 @@ export const About = () => {
         <Typography
           variant="h3"
           textAlign="center"
-          sx={{ fontFamily: "monospace" }}
+          sx={{ fontFamily: "monospace", mb: 5 }}
         >
           Trust no one else with the way you look.
         </Typography>

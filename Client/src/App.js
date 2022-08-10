@@ -10,6 +10,7 @@ import { StylistCard } from "./components/StylistCard";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Reviews } from "./components/Reviews";
+import { Photos } from "./components/Photos";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           <div className="grid place-content-center mb-5 mt-20">
             <About />
           </div>
+        <div className="mt-10 grid place-content-center ">
+          <Photos/>
+        </div>
         <div className="mt-10 grid place-content-center ">
           <Reviews/>
         </div>
