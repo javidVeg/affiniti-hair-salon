@@ -11,7 +11,8 @@ export const Photos = () => {
     <div className="grid grid-cols-2 grid-rows-2 gap-20 ">
       <div className="">
         <Card
-          sx={{ width: 400, height: 498, borderRadius: "15px", boxShadow: 10 }}
+          elevation="15"
+          sx={{ width: 400, height: 498, borderRadius: "15px" }}
         >
           <CardMedia
             component="img"
@@ -23,11 +24,11 @@ export const Photos = () => {
       </div>
       <div className="mt-32">
         <Card
+          elevation="15"
           sx={{
             width: 400,
             height: 498,
             borderRadius: "15px",
-            boxShadow: 10,
           }}
         >
           <CardMedia
@@ -40,11 +41,11 @@ export const Photos = () => {
       </div>
       <div className="-mt-32">
         <Card
+          elevation="15"
           sx={{
             width: 400,
             height: 498,
             borderRadius: "15px",
-            boxShadow: 10,
           }}
         >
           <CardMedia
@@ -57,11 +58,11 @@ export const Photos = () => {
       </div>
       <div>
         <Card
+          elevation="15"
           sx={{
             width: 400,
             height: 498,
             borderRadius: "15px",
-            boxShadow: 10,
           }}
         >
           <CardMedia

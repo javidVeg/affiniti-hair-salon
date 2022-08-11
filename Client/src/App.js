@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Card, Box } from "@mui/material";
 import videoBG from "../src/assets/production ID_4611893.mp4";
 import AffinitiLogo from "../src/assets/Affiniti-Logo.png";
 // import { ContactForm } from "./components/ContactForm";
@@ -11,6 +12,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Reviews } from "./components/Reviews";
 import { Photos } from "./components/Photos";
+import Sand from "../src/assets/sand.jpg";
 
 function App() {
   return (
@@ -24,28 +26,33 @@ function App() {
           </div>
         </div>
       </section>
-      <section >
+      <section>
         <div className="flex flex-col justify-center items-center">
           <div className="grid place-content-center mb-5 mt-20">
             <About />
           </div>
-        <div className="mt-10 grid place-content-center ">
-          <Photos/>
-        </div>
-        <div className="mt-10 grid place-content-center ">
-          <Reviews/>
-        </div>
+          <div className="mt-10 grid place-content-center ">
+            <Photos />
+          </div>
+          <div className="mt-10 grid place-content-center ">
+            <Reviews />
+          </div>
         </div>
         <motion.div>
           <StylistCard />
         </motion.div>
-          <div className="grid place-content-center mb-5 mt-5">
-            <LocationCard />
-          </div>
-          <div className="mt-5 grid place-content-center">
-            <BookNowButton />
-          </div>
       </section>
+      <div className="mt-20">
+        <div className=" static  h-screen w-screen bg-slate-300 flex justify-center items-center -mb-11">
+          <img src={Sand} width="10%" className="relative h-screen w-screen " />
+          <Card className="absolute" elevation="15" sx={{ borderRadius: 3 }}>
+            <div className="m-10 gap-5 flex flex-row">
+              <LocationCard />
+              <BookNowButton />
+            </div>
+          </Card>
+        </div>
+      </div>
       <footer className="mt-10">
         <Footer />
       </footer>

@@ -13,7 +13,7 @@ export const Footer = () => {
       <Box
         px={{ xs: 3, sm: 3 }}
         py={{ xs: 5, sm: 3 }}
-        className="bg-neutral-800"
+        className=" bg-zinc-900"
       >
         <Container maxWidth="lg">
           <Grid container spacing={8}>
@@ -46,8 +46,7 @@ export const Footer = () => {
                 <Link
                   href="https://www.vagaro.com/affinitihairsalon/book-now"
                   sx={{ color: "white" }}
-                >
-                  Make an appointment!
+                >Make an appointment!
                 </Link>
               </Box>
             </Grid>

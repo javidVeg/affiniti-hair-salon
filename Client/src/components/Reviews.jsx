@@ -67,7 +67,7 @@ export const Reviews = () => {
     <div className="grid grid-cols-2 gap-10">
       {reviewData.reviews.map((data) => (
         <div className="relative">
-          <Card sx={{ maxWidth: 450, opacity: "inherit", borderRadius: 2 }}>
+          <Card elevation="10" sx={{ maxWidth: 450, opacity: "inherit", borderRadius: 2 }}>
             <a href={data.url}>
               <FaYelp size="25" className="absolute top-5 right-5" />
             </a>
