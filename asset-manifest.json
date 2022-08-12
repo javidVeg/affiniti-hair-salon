@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/affiniti-hair-salon/static/css/main.55362084.css",
-    "main.js": "/affiniti-hair-salon/static/js/main.b461a11e.js",
+    "main.js": "/affiniti-hair-salon/static/js/main.0e419ece.js",
     "static/media/production ID_4611893.mp4": "/affiniti-hair-salon/static/media/production ID_4611893.be32dee64d9da309da48.mp4",
     "static/media/hair2.jpg": "/affiniti-hair-salon/static/media/hair2.961d71cbf6a203da3a8a.jpg",
     "static/media/salon1.jpg": "/affiniti-hair-salon/static/media/salon1.55854ea059d0ab8079b6.jpg",
@@ -25,10 +25,10 @@
     "static/media/jmac.jpg": "/affiniti-hair-salon/static/media/jmac.18b1d21fe6a0bfa61500.jpg",
     "index.html": "/affiniti-hair-salon/index.html",
     "main.55362084.css.map": "/affiniti-hair-salon/static/css/main.55362084.css.map",
-    "main.b461a11e.js.map": "/affiniti-hair-salon/static/js/main.b461a11e.js.map"
+    "main.0e419ece.js.map": "/affiniti-hair-salon/static/js/main.0e419ece.js.map"
   },
   "entrypoints": [
     "static/css/main.55362084.css",
-    "static/js/main.b461a11e.js"
+    "static/js/main.0e419ece.js"
   ]
 }
