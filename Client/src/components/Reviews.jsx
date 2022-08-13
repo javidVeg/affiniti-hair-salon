@@ -13,30 +13,34 @@ import { BsStarFill } from "react-icons/bs";
 import { FaYelp } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { getReview } from "../review-data-api";
 
 export const Reviews = () => {
   //! @ THIS ENABLES SCROLL ANIMATIONS
   const { ref, inView } = useInView();
   const animation = useAnimation();
-  const [reviewData, setReviewData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState(null);
+  const [shuffleData, setShuffleData] = useState(null);
+  const [isLoading, setLoading] = useState(false);
 
+  //? @ THIS GETS DATA FROM DATA SHEET
   useEffect(() => {
-    //! @ FETCHES DATA FROM SERVER API CALL
-    fetch("http://localhost:3001/api/")
-      .then((res) => {
-        if (res) {
-          return res.json();
-        }
-      })
-      .then((resp) => {
-        setReviewData(resp);
-        console.log(reviewData);
-      })
-      .finally(() => setIsLoading(false));
-    //! @ -------------------------------------------------------------|
+    setLoading(true);
+    getReview().then((data) => {
+      const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+      setData(shuffle(data));
+      setLoading(false);
+    });
+  }, []); 
+  
+  console.log(data)
+  // const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
+  // const newList = shuffle(data)
+  // setShuffleData(newList);
+  // console.log(shuffleData)
 
-  }, []);
+  if (isLoading) return <p>Loading...</p>;
+  if (!data) return <p>No profile data</p>;
   
   //! @ INVIEW TRACKS WHEN COMPONENT IS ON SCREEN FOR MOTION EFFECTS
   const reviewAnimation = () => {
@@ -65,19 +69,19 @@ export const Reviews = () => {
     <CircularProgress />
   ) : (
     <div className="grid grid-cols-2 gap-10">
-      {reviewData.reviews.map((data) => (
+      {data.slice(0, 3).map((info) => (
         <div className="relative">
           <Card elevation="10" sx={{ maxWidth: 450, opacity: "inherit", borderRadius: 2 }}>
-            <a href={data.url}>
+            <a href={info.name}>
               <FaYelp size="25" className="absolute top-5 right-5" />
             </a>
             <div className="grid place-items-center m-5">
               <Avatar
-                src={data.user.image_url}
+                src={info.image}
                 sx={{ width: 56, height: 56, m: 1 }}
               />
               <Typography sx={{ fontFamily: "monospace" }}>
-                {data.user.name}
+                {info.name}
               </Typography>
               <div className="flex flex-row space-x-4 m-3">
                 <BsStarFill size="25" color="#ffe082" />
@@ -87,7 +91,7 @@ export const Reviews = () => {
                 <BsStarFill size="25" color="#ffe082" />
               </div>
               <Typography variant="h6 m-5" textAlign="center">
-                "{data.text}"
+                "{info.review}"
               </Typography>
             </div>
           </Card>
