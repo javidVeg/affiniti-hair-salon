@@ -5,8 +5,8 @@ import { Box } from "@mui/system";
 
 export const BookNowButton = () => {
   return (
-    <div className="grid md:grid-cols-2 md:gap-10">
-      <div>
+    <div className="grid md:grid-rows-2 ">
+      <div className="items-center">
         <Box width="160px" sx={{ textAlign: "center" }}>
           <Typography
             variant="h4"
