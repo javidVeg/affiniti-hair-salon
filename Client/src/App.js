@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Card, Box } from "@mui/material";
 import videoBG from "../src/assets/production ID_4611893.mp4";
 import AffinitiLogo from "../src/assets/Affiniti-Logo.png";
 // import { ContactForm } from "./components/ContactForm";
@@ -15,13 +14,37 @@ import { Photos } from "./components/Photos";
 import Sand from "../src/assets/sand.jpg";
 
 function App() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+  //! @ INVIEW TRACKS WHEN COMPONENT IS ON SCREEN FOR MOTION EFFECTS
+
+  const locationCardAnimation = () => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({ x: -300 });
+    }
+    console.log("use effect hook, inView=", inView);
+  };
+
+  locationCardAnimation();
+
+  //! @ -------------------------------------------------------------|
   return (
     <div className="flex flex-col max-w-full overflow-hidden">
       <section className="h-screen box-border ">
         <video src={videoBG} autoPlay loop muted />
         <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
           <div className="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-40 "></div>
-          <div className="absolute grid h-screen place-items-center">
+          <div className="absolute grid scale-110 bottom-10 h-screen place-items-center md:h-screen md:scale-100 md:bottom-0">
             <img src={AffinitiLogo} alt="logo" width="80%" />
           </div>
         </div>
@@ -38,19 +61,22 @@ function App() {
             <Reviews />
           </div>
         </div>
-        <motion.div className="mt-20 md:mt-40">
+        <div className="mt-20 md:mt-40">
           <StylistCard />
-        </motion.div>
+        </div>
       </section>
       <div className=" mt-20 static grid grid-cols-1 place-items-center -mb-11">
         <img src={Sand} className="relative h-screen w-screen " />
-        <div className="absolute bg-white max-w-sm rounded overflow-hidden shadow-lg justify-center ">
-          <div className="m-10 gap-5 flex flex-col md:flex-row items-center">
+        <motion.div
+          ref={ref}
+          animate={animation}
+          className="absolute bg-white max-w-sm rounded overflow-hidden shadow-lg justify-center "
+        >
+          <div className="m-3 gap-5 flex flex-col md:flex-row items-center">
             <LocationCard />
             <BookNowButton />
-            
           </div>
-        </div>
+        </motion.div>
       </div>
       <footer className="mt-10">
         <Footer />
