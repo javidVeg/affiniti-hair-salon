@@ -68,7 +68,7 @@ export const Reviews = () => {
   return isLoading ? (
     <CircularProgress />
   ) : (
-    <div className="grid grid-cols-2 gap-10">
+    <div className="grid md:grid-cols-2 gap-10">
       {data.slice(0, 3).map((info) => (
         <div className="relative">
           <Card elevation="10" sx={{ maxWidth: 450, opacity: "inherit", borderRadius: 2 }}>

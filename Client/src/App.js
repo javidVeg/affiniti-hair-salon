@@ -16,7 +16,7 @@ import Sand from "../src/assets/sand.jpg";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col max-w-full"> //Change this max-x
       <section className="h-screen box-border ">
         <video src={videoBG} autoPlay loop muted />
         <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
@@ -42,16 +42,15 @@ function App() {
           <StylistCard />
         </motion.div>
       </section>
-      <div className="mt-20">
-        <div className=" static  h-screen w-screen bg-slate-300 flex justify-center items-center -mb-11">
-          <img src={Sand} width="10%" className="relative h-screen w-screen " />
-          <Card className="absolute" elevation="15" sx={{ borderRadius: 3 }}>
+      <div className="mt-20 static h-screen w-screen grid grid-cols-1 items-center -mb-11">
+          <img src={Sand} width="100%" className="relative h-screen w-screen "/>
+          <div className="absolute bg-white max-w-sm rounded overflow-hidden shadow-lg">
             <div className="m-10 gap-5 flex flex-row">
               <LocationCard />
               <BookNowButton />
             </div>
-          </Card>
-        </div>
+          </div>
+        
       </div>
       <footer className="mt-10">
         <Footer />

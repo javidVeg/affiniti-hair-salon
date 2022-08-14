@@ -8,7 +8,7 @@ import Instagram from "../assets/instagram.png";
 
 export const Photos = () => {
   return (
-    <div className="grid grid-cols-2 grid-rows-2 gap-20 ">
+    <div className="grid gap-8 md:grid-cols-2 grid-rows-2 md:gap-20 ">
       <div className="">
         <Card
           elevation="15"
@@ -22,7 +22,7 @@ export const Photos = () => {
           />
         </Card>
       </div>
-      <div className="mt-32">
+      <div className="md:mt-32">
         <Card
           elevation="15"
           sx={{
@@ -39,7 +39,7 @@ export const Photos = () => {
           />
         </Card>
       </div>
-      <div className="-mt-32">
+      <div className="md:-mt-32">
         <Card
           elevation="15"
           sx={{
