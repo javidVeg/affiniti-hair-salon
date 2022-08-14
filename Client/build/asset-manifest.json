@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/affiniti-hair-salon/static/css/main.55362084.css",
-    "main.js": "/affiniti-hair-salon/static/js/main.0e419ece.js",
+    "main.css": "/affiniti-hair-salon/static/css/main.d3a3f9aa.css",
+    "main.js": "/affiniti-hair-salon/static/js/main.647cb98e.js",
     "static/media/production ID_4611893.mp4": "/affiniti-hair-salon/static/media/production ID_4611893.be32dee64d9da309da48.mp4",
     "static/media/hair2.jpg": "/affiniti-hair-salon/static/media/hair2.961d71cbf6a203da3a8a.jpg",
     "static/media/salon1.jpg": "/affiniti-hair-salon/static/media/salon1.55854ea059d0ab8079b6.jpg",
@@ -17,18 +17,27 @@
     "static/media/mia.jpg": "/affiniti-hair-salon/static/media/mia.2f491612395ffb237479.jpg",
     "static/media/Affiniti-Logo-White.png": "/affiniti-hair-salon/static/media/Affiniti-Logo-White.6af669f9bcadc92e3943.png",
     "static/media/Affiniti-Logo.png": "/affiniti-hair-salon/static/media/Affiniti-Logo.7aa282aa169c4e8ff6f6.png",
+    "static/media/1.jpg": "/affiniti-hair-salon/static/media/1.37e36198e89fb951b8d0.jpg",
     "static/media/malkova.jpg": "/affiniti-hair-salon/static/media/malkova.8b18ed762bf3e793b899.jpg",
     "static/media/starr.jpg": "/affiniti-hair-salon/static/media/starr.2521199d4c9be07aef38.jpg",
     "static/media/violet.jpg": "/affiniti-hair-salon/static/media/violet.e05dd0c02a05d21ed29e.jpg",
+    "static/media/4.jpg": "/affiniti-hair-salon/static/media/4.68b23ce61c1aba3d7de6.jpg",
+    "static/media/3.jpg": "/affiniti-hair-salon/static/media/3.decdacf33a2a2ead1b8d.jpg",
+    "static/media/9.jpg": "/affiniti-hair-salon/static/media/9.0d9cd8646f90846869ef.jpg",
     "static/media/yiny.jpg": "/affiniti-hair-salon/static/media/yiny.d2ac284a0564d4af1619.jpg",
+    "static/media/2.jpg": "/affiniti-hair-salon/static/media/2.f23d96d141f58aa784db.jpg",
     "static/media/instagram.png": "/affiniti-hair-salon/static/media/instagram.2caa1ed21801fef79e6b.png",
+    "static/media/6.jpg": "/affiniti-hair-salon/static/media/6.d40a91f64d0f24cd1003.jpg",
+    "static/media/8.jpg": "/affiniti-hair-salon/static/media/8.64ceeb4635865ca382c5.jpg",
+    "static/media/5.jpg": "/affiniti-hair-salon/static/media/5.64d3939fd3710cd7f782.jpg",
+    "static/media/7.jpg": "/affiniti-hair-salon/static/media/7.567569a9f96fdb00c3ca.jpg",
     "static/media/jmac.jpg": "/affiniti-hair-salon/static/media/jmac.18b1d21fe6a0bfa61500.jpg",
     "index.html": "/affiniti-hair-salon/index.html",
-    "main.55362084.css.map": "/affiniti-hair-salon/static/css/main.55362084.css.map",
-    "main.0e419ece.js.map": "/affiniti-hair-salon/static/js/main.0e419ece.js.map"
+    "main.d3a3f9aa.css.map": "/affiniti-hair-salon/static/css/main.d3a3f9aa.css.map",
+    "main.647cb98e.js.map": "/affiniti-hair-salon/static/js/main.647cb98e.js.map"
   },
   "entrypoints": [
-    "static/css/main.55362084.css",
-    "static/js/main.0e419ece.js"
+    "static/css/main.d3a3f9aa.css",
+    "static/js/main.647cb98e.js"
   ]
 }

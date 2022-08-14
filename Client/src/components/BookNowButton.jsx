@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
 
 export const BookNowButton = () => {
   return (
-    <div className="grid grid-rows-2 md:grid-cols-2 gap-10">
+    <div className="grid md:grid-cols-2 md:gap-10">
       <div>
         <Box width="160px" sx={{ textAlign: "center" }}>
           <Typography
@@ -36,6 +36,7 @@ export const BookNowButton = () => {
           size="large"
           startIcon={<CalendarMonthIcon />}
           sx={{
+            mt: 1,
             color: "black",
             backgroundColor: "#ffe082",
             boxShadow: "10",

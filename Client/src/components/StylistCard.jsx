@@ -26,9 +26,12 @@ export const StylistCard = () => {
 
   return (
     <div className="grid place-items-center mt-4">
-      <Card elevation="10" className="w-30 mt-20">
+      <div className=" scale-125 md:scale-100 md:mb-10 overflow-hidden">
+        <img src={Salon1}/>
+        </div>
+      {/* <Card elevation="10" className="w-30 mt-20">
         <img src={Salon1} className=" " />
-      </Card>
+      </Card> */}
       <div className=" grid md:grid-cols-4 mt-20">
         {data.map((info) => (
           <motion.div
