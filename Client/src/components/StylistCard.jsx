@@ -27,19 +27,22 @@ export const StylistCard = () => {
   return (
     <div className="grid place-items-center mt-4">
       <div className=" scale-125 md:scale-100 md:mb-10 overflow-hidden">
-        <img src={Salon1}/>
-        </div>
+        <img src={Salon1} />
+      </div>
       {/* <Card elevation="10" className="w-30 mt-20">
         <img src={Salon1} className=" " />
       </Card> */}
-      <div className=" grid md:grid-cols-4 mt-20">
+      <div className=" grid md:grid-cols-4 mt-10 ">
         {data.map((info) => (
           <motion.div
             whileHover={{ scale: 1.1, originX: 0, originY: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="m-8"
           >
-            <Card elevation="8" sx={{ maxWidth: 345, opacity: "inherit", borderRadius: 2 }}>
+            <Card
+              elevation="8"
+              sx={{ maxWidth: 345, opacity: "inherit", borderRadius: 2 }}
+            >
               <div className="grid place-items-center m-10 ">
                 <Avatar
                   alt="Stylist"

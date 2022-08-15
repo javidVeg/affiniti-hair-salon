@@ -5,8 +5,8 @@ import { Box } from "@mui/system";
 
 export const BookNowButton = () => {
   return (
-    <div className="grid md:grid-rows-2 ">
-      <div className="items-center">
+    <div className="">
+      <div className="">
         <Box width="160px" sx={{ textAlign: "center" }}>
           <Typography
             variant="h4"
@@ -29,18 +29,22 @@ export const BookNowButton = () => {
         </Box>
       </div>
 
-      <div>
+      <div className="">
         <Button
           variant="contained"
           href="https://www.vagaro.com/affinitihairsalon/book-now"
           size="large"
           startIcon={<CalendarMonthIcon />}
           sx={{
+            width: "160px",
+            height: "50px",
             mt: 1,
             color: "black",
             backgroundColor: "#ffe082",
             boxShadow: "10",
-            "&:hover": { backgroundColor: "#ffe69b" },
+            fontSize: 14,
+            "&:hover": { backgroundColor: "#ffe69b",
+             },
           }}
         >
           Book Now!

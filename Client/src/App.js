@@ -70,9 +70,9 @@ function App() {
         <motion.div
           ref={ref}
           animate={animation}
-          className="absolute bg-white max-w-sm rounded overflow-hidden shadow-lg justify-center "
+          className="absolute bg-white rounded overflow-hidden shadow-lg justify-center "
         >
-          <div className="m-3 gap-5 flex flex-col md:flex-row items-center">
+          <div className="m-5 md:m-10 gap-5 flex flex-col md:flex-row items-center">
             <LocationCard />
             <BookNowButton />
           </div>
