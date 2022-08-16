@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./App.css"
 import videoBG from "../src/assets/production ID_4611893.mp4";
 import AffinitiLogo from "../src/assets/Affiniti-Logo.png";
 // import { ContactForm } from "./components/ContactForm";
@@ -12,7 +13,7 @@ import { useInView } from "react-intersection-observer";
 import { Reviews } from "./components/Reviews";
 import { Photos } from "./components/Photos";
 import Sand from "../src/assets/sand.jpg";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
   const { ref, inView } = useInView();
@@ -41,9 +42,9 @@ function App() {
   //! @ -------------------------------------------------------------|
   return (
     <div>
-      <section className="">
+      
         <Navbar/>
-      </section>
+      
       <div className="flex flex-col max-w-full overflow-hidden">
         <section className="h-screen box-border ">
           <video src={videoBG} autoPlay loop muted />
