@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./App.css"
+import "./App.css";
 import videoBG from "../src/assets/production ID_4611893.mp4";
 import AffinitiLogo from "../src/assets/Affiniti-Logo.png";
 // import { ContactForm } from "./components/ContactForm";
@@ -42,10 +42,8 @@ function App() {
   //! @ -------------------------------------------------------------|
   return (
     <div>
-      
-        <Navbar/>
-      
-      <div className="flex flex-col max-w-full overflow-hidden">
+      <Navbar />
+      <section id="home" className="flex flex-col max-w-full overflow-hidden">
         <section className="h-screen box-border ">
           <video src={videoBG} autoPlay loop muted />
           <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
@@ -55,23 +53,33 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="about">
           <div className="flex flex-col justify-center items-center">
             <div className="grid place-content-center mb-5 mt-20">
               <About />
             </div>
-            <div className="mt-10 grid place-content-center ">
+            <div className="mt-10 -mb-20 grid place-content-center ">
               <Photos />
             </div>
-            <div className="mt-10 grid place-content-center ">
-              <Reviews />
+            <section
+              id="reviews"
+              className=" mt-40 md:mt-10 grid place-content-center "
+            >
+              <div className=" mt-10 md:mb-14 md:mt-10">
+                <Reviews />
+              </div>
+            </section>
+          </div>
+          <section id="stylist" className="grid place-content-center ">
+            <div className=" mt-12 md:mt-2 ">
+              <StylistCard />
             </div>
-          </div>
-          <div className="mt-20 md:mt-40">
-            <StylistCard />
-          </div>
+          </section>
         </section>
-        <div className=" mt-20 static grid grid-cols-1 place-items-center -mb-11">
+        <section
+          id="contact"
+          className=" mt-20 static grid grid-cols-1 place-items-center -mb-11"
+        >
           <img src={Sand} className="relative h-screen w-screen " />
           <motion.div
             ref={ref}
@@ -83,11 +91,11 @@ function App() {
               <BookNowButton />
             </div>
           </motion.div>
-        </div>
+        </section>
         <footer className="mt-10">
           <Footer />
         </footer>
-      </div>
+      </section>
     </div>
   );
 }

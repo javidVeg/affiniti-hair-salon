@@ -12,14 +12,14 @@ export const Navbar = () => {
     <div className="Navbar z-10 fixed bg-zinc-900 bg-opacity-80  bg-clip-padding navbar-blur">
       <div className="leftSide">
         <div className="links" id={showLinks ? "hidden" : ""}>
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Reviews</a>
-          <a href="">Stylist</a>
-          <a href="">Contact</a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#home">Home</a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#about">About</a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#reviews">Reviews</a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#stylist">Stylist</a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#contact">Contact</a>
         </div>
           <div id="hamburger" className="">
-          <Hamburger onToggle={() => setShowLinks(!showLinks)} color="white"/>
+          <Hamburger rounded onToggle={() => setShowLinks(!showLinks)} color="white"/>
           </div>
       </div>
       <div className="rightSide">

@@ -1,3 +1,7 @@
+body {
+    scroll-behavior: smooth;
+        
+}
 .navbar-blur {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -82,4 +86,6 @@
     margin: 10px;
     font-size: 15px;
   }
+
+
 }
