@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <div className="Navbar z-10 fixed">
+    <div className="Navbar z-10 fixed bg-zinc-900 bg-opacity-80  bg-clip-padding navbar-blur">
       <div className="leftSide">
         <div className="links" id={showLinks ? "hidden" : ""}>
           <a href="">Home</a>
