@@ -6,7 +6,7 @@ import { Sling as Hamburger } from "hamburger-react";
 import { dialogClasses } from "@mui/material";
 
 export const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(true);
+  const [showLinks, setShowLinks] = useState(false);
 
   return (
     <div className="Navbar z-10 fixed">
@@ -19,7 +19,7 @@ export const Navbar = () => {
           <a href="">Contact</a>
         </div>
           <div id="hamburger" className="">
-          <Hamburger color="white"/>
+          <Hamburger onToggle={() => setShowLinks(!showLinks)} color="white"/>
           </div>
       </div>
       <div className="rightSide">
