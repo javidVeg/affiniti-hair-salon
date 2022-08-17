@@ -44,7 +44,7 @@ export const StylistCard = () => {
           >
             <Card
               elevation="8"
-              sx={{ maxWidth: 345, opacity: "inherit", borderRadius: 2 }}
+              sx={{ maxWidth: 345, height:420, opacity: "inherit", borderRadius: 2 }}
             >
               <div className="grid place-items-center m-10 ">
                 <Avatar

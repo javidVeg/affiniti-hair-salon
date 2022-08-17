@@ -12,30 +12,43 @@ export const Navbar = () => {
     <div className="Navbar z-10 fixed bg-zinc-900 bg-opacity-80  bg-clip-padding navbar-blur">
       <div className="leftSide">
         <div className="links" id={showLinks ? "hidden" : ""}>
-          <a onClick={() => setShowLinks(!showLinks)} href="#home">Home</a>
-          <a onClick={() => setShowLinks(!showLinks)} href="#about">About</a>
-          <a onClick={() => setShowLinks(!showLinks)} href="#reviews">Reviews</a>
-          <a onClick={() => setShowLinks(!showLinks)} href="#stylist">Stylist</a>
-          <a onClick={() => setShowLinks(!showLinks)} href="#contact">Contact</a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#home">
+            Home
+          </a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#about">
+            About
+          </a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#reviews">
+            Reviews
+          </a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#stylist">
+            Stylist
+          </a>
+          <a onClick={() => setShowLinks(!showLinks)} href="#contact">
+            Contact
+          </a>
         </div>
-          <div id="hamburger" className="">
-          <Hamburger rounded onToggle={() => setShowLinks(!showLinks)} color="white"/>
-          </div>
+        <div id="hamburger" className="">
+          <Hamburger
+            rounded
+            onToggle={() => setShowLinks(!showLinks)}
+            color="white"
+          />
+        </div>
       </div>
       <div className="rightSide">
-      <Button
+        <Button
           variant="contained"
           href="https://www.vagaro.com/affinitihairsalon/book-now"
           size="medium"
           startIcon={<CalendarMonthIcon />}
           sx={{
-            mt: 1,
+           
             color: "black",
             backgroundColor: "#ffe082",
             boxShadow: "10",
             fontSize: 14,
-            "&:hover": { backgroundColor: "#ffe69b",
-             },
+            "&:hover": { backgroundColor: "#ffe69b" },
           }}
         >
           Book Now!

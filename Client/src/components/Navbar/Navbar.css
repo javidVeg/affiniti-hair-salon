@@ -28,7 +28,8 @@ body {
   text-decoration: none;
   color: white;
   font-size: 25px;
-  margin-left: 15px;
+  margin-left: 25px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .Navbar .leftSide #hamburger {
@@ -44,7 +45,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 25px;
+  margin-right: 25px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -62,6 +63,7 @@ body {
 @media only screen and (max-width: 650px) {
   .Navbar .leftSide #hamburger {
     display: flex;
+    margin-left: 20px;
   }
 
   .Navbar .leftSide .links {
@@ -83,8 +85,8 @@ body {
     
   }
   .Navbar .leftSide #hidden a {
-    margin: 10px;
-    font-size: 15px;
+    margin: 8px;
+    font-size: 18px;
   }
 
 

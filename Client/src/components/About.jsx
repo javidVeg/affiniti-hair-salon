@@ -46,27 +46,40 @@ export const About = () => {
           Trust no one else with the way you look.
         </Typography>
         <div className="mt-3">
-          <Divider variant="middle" >
-          <Typography
-            variant="h5"
-            textAlign="center"
-            fontFamily="serif"
-            color="#212121"
-          >
-            WELCOME TO AFFINITI
-          </Typography>
+          <Divider variant="middle">
+            <Typography
+              variant="h5"
+              textAlign="center"
+              fontFamily="serif"
+              color="#212121"
+            >
+              WELCOME TO AFFINITI
+            </Typography>
           </Divider>
+            <Typography
+              textAlign="center"
+              sx={{ fontFamily: "monospace" }}
+              className="-mt-4"
+            >
+              Established in 2020
+            </Typography>
         </div>
-        <div className="pl-20 pr-20 mt-4">
+        <div className=" px-10 mt-4">
           <Typography textAlign="center">
-            Me gustan mucho las Gabriela Las Patricia, las Nicolle, las Sofía Mi
-            primera novia en kinder, María Y mi primer amor se llamaba Thalía
-            Tengo una colombiana Que me escribe to' los día' Y una mexicana que
-            ni yo sabía Otra en San Antonio que me quiere todavía Y las de PR
-            que todita' son mía' Una dominicana que es uva bombón Uva, uva
-            bombón La de Barcelona que vino en avión Y dice que mi bicho está
-            cabrón.
+            Affiniti Hair Salon started as a small suite in Whittier in 2019 but
+            with much work and determination we moved to a bigger location in
+            Uptown Whittier and decided to expand and open the doors to talented
+            hairstylists who would share the same vision. Affiniti means the
+            liking or love for something and that’s exactly what we have. We
+            love doing hair, making the clients feel confident and we wanted to
+            share that with our clients. Affiniti Hair Salon specializes in making the client feel more
+            confident about a look that suits them. We believe that there are
+            numerous of wonderful colors out there, but our speciality is to do
+            a color that is right for you. We believe everyone has the perfect
+            looks that suit their skin tone, eye color, career, and lifestyle.
           </Typography>
+          
+          
           <Typography textAlign="center" fontStyle="italic">
             - Natalie (Owner)
           </Typography>
