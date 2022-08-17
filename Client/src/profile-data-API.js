@@ -4,6 +4,8 @@ import erika from "../src/assets/people/erika.jpg";
 import momo from "../src/assets/people/momo.jpg";
 import natalie from "../src/assets/people/natalie.jpg";
 import vivian from "../src/assets/people/vivian.jpg";
+import jannae from "../src/assets/people/janae.jpg";
+import karla from "../src/assets/people/Karla.jpg";
 
 
 export const getData = async () => {
@@ -76,6 +78,30 @@ export const getData = async () => {
       role: "Hair Stylist",
       snippet: "Being genuinely kind, the world needs more of it.",
       igLink: "",
+      twLink: "",
+      fbLink: "",
+      tikLink: ""
+    },
+    {
+      _id: "7",
+      image: jannae,
+      firstName: "Jannae",
+      emoji: "🤪",
+      role: "Hair Stylist",
+      snippet: "The party’s here!!!",
+      igLink: "https://www.instagram.com/stylesbyjennae",
+      twLink: "",
+      fbLink: "",
+      tikLink: ""
+    },
+    {
+      _id: "8",
+      image: karla,
+      firstName: "Karla",
+      emoji: "🌊",
+      role: "Hair Stylist",
+      snippet: "I love to make you feel amazing! ",
+      igLink: "https://www.instagram.com/hairby_karlaa3",
       twLink: "",
       fbLink: "",
       tikLink: ""

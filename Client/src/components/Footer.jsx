@@ -83,8 +83,8 @@ export const Footer = () => {
                     className="ml-3 mr-3 mt-1 block"
                     color="white"
                   />
-                  <a href="tel:123-456-7890" className="text-white">
-                    123-456-7890
+                  <a href="tel:562-360-1992" className="text-white">
+                  (562) 360-1992
                   </a>
                 </div>
                 <div className="flex flex-row p-2">

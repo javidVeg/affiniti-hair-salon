@@ -25,7 +25,7 @@ export const LocationCard = () => {
           </div>
           <div className="flex flex-row p-2">
             <BsPhoneFill size="6%" className=" mt-1 mr-1 block" />
-            <a href="tel:123-456-7890">123-456-7890</a>
+            <a href="tel:562-360-1992">(562) 360-1992</a>
           </div>
         </div>
       </Card>
