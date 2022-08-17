@@ -47,7 +47,7 @@ function App() {
         <section className="h-screen box-border ">
           <video src={videoBG} autoPlay loop muted />
           <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
-            <div className="absolute top-0 md:-top-0 lg:-top-0 left-0 w-screen h-screen bg-black bg-opacity-40 "></div>
+            <div className="absolute -top-1 md:-top-1 lg:-top-0 right-0 w-screen h-screen bg-black bg-opacity-40 "></div>
             <div className="absolute grid scale-110 bottom-10 h-screen place-items-center md:h-screen md:scale-100 md:bottom-0">
               <img src={AffinitiLogo} alt="logo" width="80%" />
             </div>

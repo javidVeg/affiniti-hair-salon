@@ -13,7 +13,7 @@ export const getData = async () => {
       image: natalie,
       firstName: "Natalie",
       emoji: "🤍",
-      role: "Owner Colorist",
+      role: "Owner / Colorist",
       snippet: "Making hair thrive one head at a time!",
       igLink: "",
       twLink: "",

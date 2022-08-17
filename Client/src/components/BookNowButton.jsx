@@ -10,19 +10,21 @@ export const BookNowButton = () => {
         <Box width="160px" sx={{ textAlign: "center" }}>
           <Typography
             variant="h4"
-            sx={{ fontFamily: "monospace", color: "red" }}
+
+            sx={{ fontFamily: "monospace"  }}
           >
             YOU ARE HOT!
           </Typography>
+          <Divider / >
           <Typography
-            variant="h4"
-            sx={{ fontFamily: "monospace", color: "gray" }}
+            variant="h5"
+            sx={{ fontFamily: "monospace", color: "black" }}
           >
             WE WILL MAKE YOU
           </Typography>
           <Typography
             variant="h4"
-            sx={{ fontFamily: "monospace", color: "red" }}
+            sx={{ fontFamily: "monospace", color: "black" }}
           >
             HOTTER🔥
           </Typography>

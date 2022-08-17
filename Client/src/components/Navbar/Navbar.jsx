@@ -7,32 +7,36 @@ import { dialogClasses } from "@mui/material";
 
 export const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const [isOpen, setOpen] = useState(false)
+  console.log(isOpen)
 
   return (
     <div className="Navbar z-10 fixed bg-zinc-900 bg-opacity-80  bg-clip-padding navbar-blur">
       <div className="leftSide">
-        <div className="links" id={showLinks ? "hidden" : ""}>
-          <a onClick={() => setShowLinks(!showLinks)} href="#home">
+        <div className="links" id={isOpen ? "hidden" : ""}>
+          <a onClick={() => setOpen(!isOpen)} href="#home">
             Home
           </a>
-          <a onClick={() => setShowLinks(!showLinks)} href="#about">
+          <a onClick={() => setOpen(!isOpen)} href="#about">
             About
           </a>
-          <a onClick={() => setShowLinks(!showLinks)} href="#reviews">
+          <a onClick={() => setOpen(!isOpen)} href="#reviews">
             Reviews
           </a>
-          <a onClick={() => setShowLinks(!showLinks)} href="#stylist">
+          <a onClick={() => setOpen(!isOpen)} href="#stylist">
             Stylist
           </a>
-          <a onClick={() => setShowLinks(!showLinks)} href="#contact">
+          <a onClick={() => setOpen(!isOpen)} href="#contact">
             Contact
           </a>
         </div>
         <div id="hamburger" className="">
           <Hamburger
-            rounded
-            onToggle={() => setShowLinks(!showLinks)}
-            color="white"
+            rounded 
+            // onToggle={() => setShowLinks(!showLinks) }
+            toggled={isOpen} toggle={setOpen}
+            
+            color="grey"
           />
         </div>
       </div>

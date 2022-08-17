@@ -31,16 +31,16 @@ export const Footer = () => {
                 </Typography>
               </Box>
               <Box className="m-3 grid place-items-center">
-                <Link sx={{ color: "white" }}>Home</Link>
+                <Link href="#home" sx={{ color: "white" }}>Home</Link>
               </Box>
               <Box className="m-3 grid place-items-center">
-                <Link sx={{ color: "white" }}>About</Link>
+                <Link href="#about" sx={{ color: "white" }}>About</Link>
               </Box>
               <Box className="m-3 grid place-items-center">
-                <Link sx={{ color: "white" }}>Services</Link>
+                <Link href="#reviews" sx={{ color: "white" }}>Reviews</Link>
               </Box>
               <Box className="m-3 grid place-items-center">
-                <Link sx={{ color: "white" }}>Stylist</Link>
+                <Link href="#stylist" sx={{ color: "white" }}>Stylist</Link>
               </Box>
               <Box className="m-3 grid place-items-center">
                 <Link
@@ -101,7 +101,7 @@ export const Footer = () => {
                   <BsFillPinMapFill
                     color="white"
                     size="9%"
-                    className="ml-3 mr-3 mt-1 block"
+                    className="ml-3 mr-3 mt-1 block md:w-10"
                   />
                   <a
                     className="text-white"

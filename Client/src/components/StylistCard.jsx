@@ -32,21 +32,18 @@ export const StylistCard = () => {
       {/* <Card elevation="10" className="w-30 mt-20">
         <img src={Salon1} className=" " />
       </Card> */}
-      <div className=" grid md:grid-cols-2 lg:grid-cols-4 mt-10 ">
+      <div className=" grid md:grid-cols-2 lg:grid-cols-4 mt-20 md:mt-10 ">
         {data.map((info) => (
           <motion.div
             whileHover={{ scale: 1.1, originX: 0, originY: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="m-4"
-            
-            
-            
           >
             <Card
               elevation="8"
-              sx={{ maxWidth: 345, height:420, opacity: "inherit", borderRadius: 2 }}
+              sx={{ maxWidth: 345, height:400, opacity: "inherit", borderRadius: 2 }}
             >
-              <div className="grid place-items-center m-10 ">
+              <div className="grid place-items-center m-6 ">
                 <Avatar
                   alt="Stylist"
                   src={info.image}
@@ -72,21 +69,19 @@ export const StylistCard = () => {
                     {info.role}
                   </Typography>
                 </div>
-                <div className="-mx-8">
+                <div className="flex flex-row space-x-4 mt-1 mb-2">
+                  <a href={info.igLink}>
+                    <AiFillInstagram size="25" /> 
+                  </a>
+                  
+                </div>
+                <div className="">
                   <Typography
                     variant="subtitle2"
                     sx={{ fontFamily: "monospace", textAlign: "center" }}
                   >
                     {info.snippet}
                   </Typography>
-                </div>
-                <div className="flex flex-row space-x-4 mt-4">
-                  <a href={info.igLink}>
-                    <AiFillInstagram size="25" />
-                  </a>
-                  <BsTwitter size="25" />
-                  <AiFillFacebook size="25" />
-                  <FaTiktok size="25" />
                 </div>
               </div>
             </Card>
