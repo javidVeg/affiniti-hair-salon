@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import {
   Card,
-  CardMedia,
-  Link,
   Typography,
   Avatar,
   CircularProgress,
-  Box,
-  Button,
+  Box
 } from "@mui/material";
 import { BsStarFill } from "react-icons/bs";
 import { FaYelp } from "react-icons/fa";
@@ -20,7 +17,6 @@ export const Reviews = () => {
   const { ref, inView } = useInView();
   const animation = useAnimation();
   const [data, setData] = useState(null);
-  const [shuffleData, setShuffleData] = useState(null);
   const [isLoading, setLoading] = useState(false);
 
   //? @ THIS GETS DATA FROM DATA SHEET
@@ -32,12 +28,7 @@ export const Reviews = () => {
       setLoading(false);
     });
   }, []); 
-  
-  console.log(data)
-  // const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
-  // const newList = shuffle(data)
-  // setShuffleData(newList);
-  // console.log(shuffleData)
+
 
   if (isLoading) return <p>Loading...</p>;
   if (!data) return <p>No profile data</p>;
@@ -57,7 +48,6 @@ export const Reviews = () => {
     if (!inView) {
       animation.start({ x: 300 });
     }
-    console.log("use effect hook, inView=", inView);
   };
 
   reviewAnimation();
@@ -70,8 +60,8 @@ export const Reviews = () => {
   ) : (
     <div className="grid md:grid-cols-2 gap-10">
       {data.slice(0, 3).map((info) => (
-        <div className="relative">
-          <Card elevation="10" sx={{ maxWidth: 450, opacity: "inherit", borderRadius: 2 }}>
+        <div key={info._id} className="relative">
+          <Card  elevation={10} sx={{ maxWidth: 450, opacity: "inherit", borderRadius: 2 }}>
             <a href={info.name}>
               <FaYelp size="25" className="absolute top-5 right-5" />
             </a>

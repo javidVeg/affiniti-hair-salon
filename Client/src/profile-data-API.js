@@ -17,7 +17,7 @@ export const getData = async () => {
       emoji: "🤍",
       role: "Owner / Colorist",
       snippet: "Making hair thrive one head at a time!",
-      igLink: "",
+      igLink: "https://www.instagram.com/Hairaffinatalie",
       twLink: "",
       fbLink: "",
       tikLink: ""
@@ -53,7 +53,7 @@ export const getData = async () => {
       emoji: "👩🏽‍🎨",
       role: "Hair Artist",
       snippet: "I love what i do!",
-      igLink: "",
+      igLink: "https://www.instagram.com/hair_by_crypticscissors ",
       twLink: "",
       fbLink: "",
       tikLink: ""
@@ -77,7 +77,7 @@ export const getData = async () => {
       emoji: "💖",
       role: "Hair Stylist",
       snippet: "Being genuinely kind, the world needs more of it.",
-      igLink: "",
+      igLink: "https://www.instagram.com/Hair.byviv ",
       twLink: "",
       fbLink: "",
       tikLink: ""

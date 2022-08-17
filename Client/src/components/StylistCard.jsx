@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, Typography, Avatar } from "@mui/material";
 import { AiFillInstagram } from "react-icons/ai";
-import { BsTwitter } from "react-icons/bs";
-import { AiFillFacebook } from "react-icons/ai";
-import { FaTiktok } from "react-icons/fa";
 import { getData } from "../profile-data-API";
 import { motion } from "framer-motion";
 import Salon1 from "../../src/assets/salon1.jpg";
@@ -27,20 +24,18 @@ export const StylistCard = () => {
   return (
     <div className="grid place-items-center mt-4">
       <div className=" scale-125 md:scale-100 md:mb-10 overflow-hidden">
-        <img src={Salon1} />
+        <img src={Salon1} alt="salon-image1" />
       </div>
-      {/* <Card elevation="10" className="w-30 mt-20">
-        <img src={Salon1} className=" " />
-      </Card> */}
       <div className=" grid md:grid-cols-2 lg:grid-cols-4 mt-20 md:mt-10 ">
         {data.map((info) => (
           <motion.div
             whileHover={{ scale: 1.1, originX: 0, originY: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="m-4"
+            key={info._id}
           >
             <Card
-              elevation="8"
+              elevation={8}
               sx={{ maxWidth: 345, height:400, opacity: "inherit", borderRadius: 2 }}
             >
               <div className="grid place-items-center m-6 ">

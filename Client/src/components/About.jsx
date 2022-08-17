@@ -31,8 +31,7 @@ export const About = () => {
     if (!inView) {
       animation.start({ x: -300 });
     }
-    console.log("use effect hook, inView=", inView);
-  }, [inView]);
+  }, [inView, animation]);
   //! @ -----------_
 
   return (

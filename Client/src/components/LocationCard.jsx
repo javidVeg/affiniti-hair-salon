@@ -8,7 +8,7 @@ import { BsPhoneFill } from "react-icons/bs";
 export const LocationCard = () => {
   return (
     <div>
-      <Card elevation="15" sx={{ width: 345, opacity: "inherit", borderRadius: 2 }}>
+      <Card elevation={15} sx={{ width: 345, opacity: "inherit", borderRadius: 2 }}>
         <div className="grid place-items-center pl-2 pr-2 pb-3">
           <img src={AffinitiMap} alt="Map" width="35%" className="m-5" />
           <Typography

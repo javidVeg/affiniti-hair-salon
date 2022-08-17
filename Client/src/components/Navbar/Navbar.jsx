@@ -3,12 +3,10 @@ import "./Navbar.css";
 import { Button } from "@mui/material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { Sling as Hamburger } from "hamburger-react";
-import { dialogClasses } from "@mui/material";
+
 
 export const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(false);
   const [isOpen, setOpen] = useState(false)
-  console.log(isOpen)
 
   return (
     <div className="Navbar z-10 fixed bg-zinc-900 bg-opacity-80  bg-clip-padding navbar-blur">

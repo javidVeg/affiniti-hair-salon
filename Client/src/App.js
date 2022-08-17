@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import videoBG from "../src/assets/production ID_4611893.mp4";
 import AffinitiLogo from "../src/assets/Affiniti-Logo.png";
@@ -34,7 +34,6 @@ function App() {
     if (!inView) {
       animation.start({ x: -300 });
     }
-    console.log("use effect hook, inView=", inView);
   };
 
   locationCardAnimation();
@@ -47,7 +46,7 @@ function App() {
         <section className="h-screen box-border ">
           <video src={videoBG} autoPlay loop muted />
           <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
-            <div className="absolute -top-1 md:-top-1 lg:-top-1 right-0 w-screen h-screen bg-black bg-opacity-40 "></div>
+            <div className="absolute -top-0 md:-top-0 lg:-top-0 right-0 w-screen h-screen bg-black bg-opacity-40 "></div>
             <div className="absolute grid scale-110 bottom-10 h-screen place-items-center md:h-screen md:scale-100 md:bottom-0">
               <img src={AffinitiLogo} alt="logo" width="80%" />
             </div>
@@ -80,7 +79,7 @@ function App() {
           id="contact"
           className=" mt-20 static grid grid-cols-1 place-items-center -mb-11"
         >
-          <img src={Sand} className="relative h-screen w-screen " />
+          <img src={Sand} alt="sand-image1" className="relative h-screen w-screen " />
           <motion.div
             ref={ref}
             animate={animation}
