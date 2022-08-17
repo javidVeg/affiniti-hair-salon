@@ -94,7 +94,7 @@ export const Footer = () => {
                     className="ml-3 mr-3 mt-1 block"
                   />
                   <a href="mailto: abc@example.com" className="text-white">
-                    abc@example.com
+                    Natalie@affinitihair.com
                   </a>
                 </div>
                 <div className="flex flex-row p-2">
@@ -126,15 +126,6 @@ export const Footer = () => {
                   </a>
                 </div>
               </Box>
-              {/* <Box>
-                <Link>Contact</Link>
-              </Box>
-              <Box>
-                <Link>Contact</Link>
-              </Box>
-              <Box>
-                <Link>Contact</Link>
-              </Box> */}
             </Grid>
           </Grid>
           <Box
