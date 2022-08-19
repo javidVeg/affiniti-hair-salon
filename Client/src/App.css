@@ -1,10 +1,35 @@
 .App {
     width: 100vw;
     height: 100vw;
-    
+
 }
 
 section {
     scroll-margin-top: 50px;
-  }
+}
 
+.hero-video-width {
+    width: 100%;
+    background-color: black;
+    aspect-ratio: 3/2;
+}
+
+@media only screen and (min-width: 480px) {
+    .full-width-video {
+        aspect-ratio: 16/9;
+    }
+    .primary-video {
+        display: initial;
+    }
+    .secondary-video {
+        display: none;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .primary-video {
+        display: none;
+    }
+    .secondary-video {
+        display: initial;
+    }
+}
