@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import videoBG from "../src/assets/production ID_4611893.mp4";
 import AffinitiLogo from "../src/assets/pngWebp/Affiniti-Logo.webp";
-// import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
 import { LocationCard } from "./components/LocationCard";
 import { BookNowButton } from "./components/BookNowButton";
@@ -44,11 +43,11 @@ function App() {
       <Navbar />
       <section id="home" className="flex flex-col max-w-full overflow-hidden">
         <section className="h-screen box-border ">
-          <video src={videoBG} autoPlay loop muted />
+          <video src={videoBG} type="video/mp4" autoPlay loop muted playsinline />
           <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
             <div className="absolute -top-0 md:-top-0 lg:-top-0 right-0 w-screen h-screen bg-black bg-opacity-40 "></div>
-            <div className="absolute grid scale-110 bottom-10 h-screen place-items-center md:h-screen md:scale-100 md:bottom-0">
-              <img src={AffinitiLogo} alt="logo" width="80%" />
+            <div className="absolute grid bottom-0 h-screen place-items-center md:h-screen md:scale-100 md:bottom-0">
+              <img src={AffinitiLogo} alt="logo" width="90%" />
             </div>
           </div>
         </section>
@@ -69,7 +68,7 @@ function App() {
               </div>
             </section>
           </div>
-          <section id="stylist" className="grid place-content-center ">
+          <section id="stylist" className="grid place-content-center overflow-hidden">
             <div className=" mt-12 md:mt-2 ">
               <StylistCard />
             </div>
