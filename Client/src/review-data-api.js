@@ -1,12 +1,12 @@
-import pic1 from  "../src/assets/reviewers/1.jpg"
-import pic2 from  "../src/assets/reviewers/2.jpg"
-import pic3 from  "../src/assets/reviewers/3.jpg"
-import pic4 from  "../src/assets/reviewers/4.jpg"
-import pic5 from  "../src/assets/reviewers/5.jpg"
-import pic6 from  "../src/assets/reviewers/6.jpg"
-import pic7 from  "../src/assets/reviewers/7.jpg"
-import pic8 from  "../src/assets/reviewers/8.jpg"
-import pic9 from  "../src/assets/reviewers/9.jpg"
+import pic1 from  "../src/assets/reviewersWebp/1.webp"
+import pic2 from  "../src/assets/reviewersWebp/2.webp"
+import pic3 from  "../src/assets/reviewersWebp/3.webp"
+import pic4 from  "../src/assets/reviewersWebp/4.webp"
+import pic5 from  "../src/assets/reviewersWebp/5.webp"
+import pic6 from  "../src/assets/reviewersWebp/6.webp"
+import pic7 from  "../src/assets/reviewersWebp/7.webp"
+import pic8 from  "../src/assets/reviewersWebp/8.webp"
+import pic9 from  "../src/assets/reviewersWebp/9.webp"
 export const getReview = async () => {
   return [
     {

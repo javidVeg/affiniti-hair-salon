@@ -1,9 +1,9 @@
 import { Card, CardMedia } from "@mui/material";
 import React from "react";
-import TestImage1 from "../assets/hair/hair1.jpg";
-import TestImage2 from "../assets/hair/hair2.jpg";
-import TestImage3 from "../assets/hair/hair3.jpg";
-import TestImage4 from "../assets/hair/hair4.jpg";
+import TestImage1 from "../assets/hairWebp/hair1.webp";
+import TestImage2 from "../assets/hairWebp/hair2.webp";
+import TestImage3 from "../assets/hairWebp/hair3.webp";
+import TestImage4 from "../assets/hairWebp/hair4.webp";
 
 
 export const Photos = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import videoBG from "../src/assets/production ID_4611893.mp4";
-import AffinitiLogo from "../src/assets/Affiniti-Logo.png";
+import AffinitiLogo from "../src/assets/pngWebp/Affiniti-Logo.webp";
 // import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
 import { LocationCard } from "./components/LocationCard";
@@ -12,7 +12,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Reviews } from "./components/Reviews";
 import { Photos } from "./components/Photos";
-import Sand from "../src/assets/sand.jpg";
+import Sand from "../src/assets/pngWebp/sand.webp";
 import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {

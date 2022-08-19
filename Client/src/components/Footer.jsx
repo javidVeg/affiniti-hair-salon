@@ -1,7 +1,6 @@
-import { Link, Grid, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Link, Grid, Typography, Box, Container } from "@mui/material";
 import React from "react";
-import AffinitiLogo from "../assets/Affiniti-Logo-White.png";
+import AffinitiLogo from "../assets/pngWebp/Affiniti-Logo-White.webp";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
 import { BsFillPinMapFill } from "react-icons/bs";

@@ -3,7 +3,7 @@ import { Card, Typography, Avatar } from "@mui/material";
 import { AiFillInstagram } from "react-icons/ai";
 import { getData } from "../profile-data-API";
 import { motion } from "framer-motion";
-import Salon1 from "../../src/assets/salon1.jpg";
+import Salon1 from "../../src/assets/pngWebp/salon1.webp";
 
 export const StylistCard = () => {
   const [data, setData] = useState(null);

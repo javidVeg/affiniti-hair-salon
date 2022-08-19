@@ -1,11 +1,11 @@
-import andy from "../src/assets/people/andy.jpg";
-import cristol from "../src/assets/people/cristol.jpg";
-import erika from "../src/assets/people/erika.jpg";
-import momo from "../src/assets/people/momo.jpg";
-import natalie from "../src/assets/people/natalie.jpg";
-import vivian from "../src/assets/people/vivian.jpg";
-import jannae from "../src/assets/people/janae.jpg";
-import karla from "../src/assets/people/Karla.jpg";
+import andy from "../src/assets/peopleWebp/andy.webp";
+import cristol from "../src/assets/peopleWebp/cristol.webp";
+import erika from "../src/assets/peopleWebp/erika.webp";
+import momo from "../src/assets/peopleWebp/momo.webp";
+import natalie from "../src/assets/peopleWebp/natalie.webp";
+import vivian from "../src/assets/peopleWebp/vivian.webp";
+import jannae from "../src/assets/peopleWebp/janae.webp";
+import karla from "../src/assets/peopleWebp/Karla.webp";
 
 
 export const getData = async () => {

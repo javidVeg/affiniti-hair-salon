@@ -1,7 +1,7 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import { Button, Divider, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Button, Divider, Typography, Box } from "@mui/material";
+
 
 export const BookNowButton = () => {
   return (
