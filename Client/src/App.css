@@ -8,28 +8,37 @@ section {
     scroll-margin-top: 50px;
 }
 
-.hero-video-width {
+.hero {
+    height: 100vh;
     width: 100%;
     background-color: black;
-    aspect-ratio: 3/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.hero::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.hero .hero-video{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    z-index: 5;
+}
+.hero .hero-logo {
+    position: relative;
+    z-index: 20;
+    
 }
 
-@media only screen and (min-width: 480px) {
-    .full-width-video {
-        aspect-ratio: 16/9;
-    }
-    .primary-video {
-        display: initial;
-    }
-    .secondary-video {
-        display: none;
-    }
-}
-@media only screen and (max-width: 479px) {
-    .primary-video {
-        display: none;
-    }
-    .secondary-video {
-        display: initial;
-    }
-}

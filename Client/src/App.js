@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import videoBG1 from "../src/assets/production ID_4611893.mp4";
-import videoBG from "../src/assets/newHero.mp4";
+import videoBG from "../src/assets/HeroVideo.mp4";
 import AffinitiLogo from "../src/assets/pngWebp/Affiniti-Logo.webp";
 import { Footer } from "./components/Footer";
 import { LocationCard } from "./components/LocationCard";
@@ -18,6 +17,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 function App() {
   const { ref, inView } = useInView();
   const animation = useAnimation();
+
   //! @ INVIEW TRACKS WHEN COMPONENT IS ON SCREEN FOR MOTION EFFECTS
 
   const locationCardAnimation = () => {
@@ -38,20 +38,23 @@ function App() {
 
   locationCardAnimation();
 
-  //! @ -------------------------------------------------------------|
   return (
     <div>
       <Navbar />
       <section id="home" className="flex flex-col max-w-full overflow-hidden">
-        <section className="h-screen box-border hero-video-width ">
-          <video className="primary-video" src={videoBG1} type="video/mp4" autoPlay loop muted playsinline />
-          <video className="secondary-video" src={videoBG} type="video/mp4" autoPlay loop muted playsinline />
-          <div className="absolute w-full h-screen top-0 flex flex-col items-center ">
-            <div className="absolute -top-0 md:-top-0 lg:-top-0 right-0 w-screen h-screen bg-black bg-opacity-40 "></div>
-            <div className="absolute grid bottom-0 h-screen place-items-center md:h-screen md:scale-100 md:bottom-0">
-              <img src={AffinitiLogo} alt="logo" width="90%" />
-            </div>
+
+        <section className=" hero ">
+
+          <video className="hero-video" autoPlay loop muted playsInline preload="auto" >
+            <source src={videoBG} type="video/mp4" />
+          </video>
+
+          <div className="hero-logo grid place-items-center ">
+            
+            <img src={AffinitiLogo} alt="logo" width="80%" />
           </div>
+
+         
         </section>
 
         <section id="about">
@@ -79,9 +82,9 @@ function App() {
         </section>
         <section
           id="contact"
-          className=" mt-20 static grid grid-cols-1 place-items-center -mb-11"
+          className=" mt-20 static grid grid-cols-1 place-items-center -mb-11  h-screen w-screen"
         >
-          <img src={Sand} alt="sand-image1" className="relative h-screen w-screen " />
+          {/* <img src={Sand} alt="sand-image1" className="relative h-screen w-screen " /> */}
           <motion.div
             ref={ref}
             animate={animation}
