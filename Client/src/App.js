@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import videoBG from "../src/assets/HeroVideo.mp4";
+import videoBG from "../src/assets/compressedHero.mp4";
 import AffinitiLogo from "../src/assets/pngWebp/Affiniti-Logo.webp";
 import { Footer } from "./components/Footer";
 import { LocationCard } from "./components/LocationCard";
@@ -11,7 +11,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Reviews } from "./components/Reviews";
 import { Photos } from "./components/Photos";
-import Sand from "../src/assets/pngWebp/sand.webp";
+import Sand from "../src/assets/pngWebp/sand(1).webp";
 import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
@@ -44,10 +44,10 @@ function App() {
       <section id="home" className="flex flex-col max-w-full overflow-hidden">
 
         <section className=" hero ">
+          <div className="texture"></div>
 
-          <video className="hero-video" autoPlay loop muted playsInline preload="auto" >
-            <source src={videoBG} type="video/mp4" />
-          </video>
+          <video className="hero-video" src={videoBG} type="video/mp4" muted autoPlay="true" loop playsInline preload="true"  />
+            
 
           <div className="hero-logo grid place-items-center ">
             
@@ -80,11 +80,13 @@ function App() {
             </div>
           </section>
         </section>
+
+
         <section
           id="contact"
-          className=" mt-20 static grid grid-cols-1 place-items-center -mb-11  h-screen w-screen"
+          className=" mt-20 relative grid grid-cols-1 place-items-center -mb-11  h-screen w-screen"
         >
-          {/* <img src={Sand} alt="sand-image1" className="relative h-screen w-screen " /> */}
+          <img src={Sand} alt="sand-image1" className="relative h-screen w-screen " />
           <motion.div
             ref={ref}
             animate={animation}
@@ -96,6 +98,8 @@ function App() {
             </div>
           </motion.div>
         </section>
+
+        
         <footer className="mt-10">
           <Footer />
         </footer>

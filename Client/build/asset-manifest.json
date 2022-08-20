@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "https://affinitihair.com/static/css/main.e328dfcc.css",
-    "main.js": "https://affinitihair.com/static/js/main.13f3ecea.js",
-    "static/media/HeroVideo.mp4": "https://affinitihair.com/static/media/HeroVideo.7b1b8a4f8b1a1b026c30.mp4",
+    "main.css": "https://affinitihair.com/static/css/main.24166539.css",
+    "main.js": "https://affinitihair.com/static/js/main.f11fe342.js",
+    "static/media/compressedHero.mp4": "https://affinitihair.com/static/media/compressedHero.8c49b535e1f1dade3e73.mp4",
     "static/media/sand.webp": "https://affinitihair.com/static/media/sand.2543f13fab91d836195f.webp",
     "static/media/hair4.webp": "https://affinitihair.com/static/media/hair4.ace0823877c401ea844f.webp",
     "static/media/hair2.webp": "https://affinitihair.com/static/media/hair2.eaeccc370fd59e2ee240.webp",
     "static/media/hair3.webp": "https://affinitihair.com/static/media/hair3.aa43ab9fb3530092db53.webp",
     "static/media/hair1.webp": "https://affinitihair.com/static/media/hair1.1401ddc9b8f903d7c33c.webp",
+    "static/media/broken-noise.png": "https://affinitihair.com/static/media/broken-noise.de1445d9d2dad2796fe8.png",
     "static/media/salon1.webp": "https://affinitihair.com/static/media/salon1.0744fe94d3c00a019dd9.webp",
     "static/media/1.webp": "https://affinitihair.com/static/media/1.1325edac0bfbbbfd25a5.webp",
     "static/media/Affiniti-Logo.webp": "https://affinitihair.com/static/media/Affiniti-Logo.584166840d65872fa227.webp",
@@ -30,11 +31,11 @@
     "static/media/5.webp": "https://affinitihair.com/static/media/5.ba140175209d0b91466e.webp",
     "static/media/7.webp": "https://affinitihair.com/static/media/7.1211d5975a3b242b164e.webp",
     "index.html": "https://affinitihair.com/index.html",
-    "main.e328dfcc.css.map": "https://affinitihair.com/static/css/main.e328dfcc.css.map",
-    "main.13f3ecea.js.map": "https://affinitihair.com/static/js/main.13f3ecea.js.map"
+    "main.24166539.css.map": "https://affinitihair.com/static/css/main.24166539.css.map",
+    "main.f11fe342.js.map": "https://affinitihair.com/static/js/main.f11fe342.js.map"
   },
   "entrypoints": [
-    "static/css/main.e328dfcc.css",
-    "static/js/main.13f3ecea.js"
+    "static/css/main.24166539.css",
+    "static/js/main.f11fe342.js"
   ]
 }

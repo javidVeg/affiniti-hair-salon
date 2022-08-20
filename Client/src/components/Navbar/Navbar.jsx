@@ -3,6 +3,9 @@ import "./Navbar.css";
 import { Button } from "@mui/material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { Sling as Hamburger } from "hamburger-react";
+import { RiMenu4Line } from "react-icons/ri";
+
+
 
 
 export const Navbar = () => {
@@ -29,13 +32,14 @@ export const Navbar = () => {
           </a>
         </div>
         <div id="hamburger" className="">
-          <Hamburger
+          {/* <Hamburger
             rounded 
             // onToggle={() => setShowLinks(!showLinks) }
             toggled={isOpen} toggle={setOpen}
             
             color="grey"
-          />
+          /> */}
+          <RiMenu4Line color= "grey" size={40} onClick={() => setOpen(!isOpen)}/>
         </div>
       </div>
       <div className="rightSide">

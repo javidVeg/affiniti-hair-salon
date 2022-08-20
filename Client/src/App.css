@@ -1,6 +1,6 @@
 .App {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
 
 }
 
@@ -11,7 +11,7 @@ section {
 .hero {
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: grey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,26 +19,38 @@ section {
 }
 .hero::after{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     content: '';
     position: absolute;
     z-index: 10;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .hero .hero-video{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
     position: absolute;
     z-index: 5;
+    aspect-ratio: 19/6;
 }
 .hero .hero-logo {
     position: relative;
     z-index: 20;
     
+}
+
+.hero .texture {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    opacity: 100%;
+    background:url(./assets/pngWebp/broken-noise.png)
 }
 
