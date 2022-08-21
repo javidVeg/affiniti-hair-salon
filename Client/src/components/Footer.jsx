@@ -92,7 +92,7 @@ export const Footer = () => {
                     color="white"
                     className="ml-3 mr-3 mt-1 block"
                   />
-                  <a href="mailto: abc@example.com" className="text-white">
+                  <a href="mailto: Natalie@affinitihair.com" className="text-white">
                     Natalie@affinitihair.com
                   </a>
                 </div>
