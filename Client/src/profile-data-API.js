@@ -6,6 +6,9 @@ import natalie from "../src/assets/peopleWebp/natalie.webp";
 import vivian from "../src/assets/peopleWebp/vivian.webp";
 import jannae from "../src/assets/peopleWebp/janae.webp";
 import karla from "../src/assets/peopleWebp/Karla.webp";
+import herminia from "../src/assets/peopleWebp/herminia.webp";
+import lidia from "../src/assets/peopleWebp/lidia.webp";
+import lupita from "../src/assets/peopleWebp/lupita.webp";
 
 
 export const getData = async () => {
@@ -33,18 +36,6 @@ export const getData = async () => {
       twLink: null,
       fbLink: null,
       tikLink: null
-    },
-    {
-      _id: "2",
-      image: cristol,
-      firstName: "Cristal",
-      emoji: "🦋",
-      role: "Hair Colorist",
-      snippet: "Creating and challenging myself, making you feel beautiful is my goal.",
-      igLink: "https://www.instagram.com/Colorbydoll",
-      twLink: "",
-      fbLink: "",
-      tikLink: ""
     },
     {
       _id: "3",
@@ -85,7 +76,7 @@ export const getData = async () => {
     {
       _id: "7",
       image: jannae,
-      firstName: "Jannae",
+      firstName: "Jennae",
       emoji: "🤪",
       role: "Hair Stylist",
       snippet: "The party’s here!!!",
@@ -106,6 +97,41 @@ export const getData = async () => {
       fbLink: "",
       tikLink: ""
     },
-    
+    {
+      _id: "9",
+      image: lupita,
+      firstName: "Lupita",
+      emoji: "🖤",
+      role: "Lash Artist",
+      snippet: "Therapy and lashes, all in one appointment!",
+      igLink: "https://www.instagram.com/lashesbylupita ",
+      twLink: "",
+      fbLink: "",
+      tikLink: ""
+    },
+    {
+      _id: "10",
+      image: herminia,
+      firstName: "Herminia",
+      emoji: "👩‍🎨",
+      role: "Hair Colorist/Stylist",
+      snippet: "Let your personality shine through your hair!",
+      igLink: "https://www.instagram.com/hair.minia",
+      twLink: "",
+      fbLink: "",
+      tikLink: ""
+    },
+    {
+      _id: "2",
+      image: lidia,
+      firstName: "Lidia",
+      emoji: "✨",
+      role: "Junior Hair Stylist",
+      snippet: "Hair is my passion!",
+      igLink: "https://www.instagram.com/hairgossip.LA",
+      twLink: "",
+      fbLink: "",
+      tikLink: ""
+    },
   ];
 };

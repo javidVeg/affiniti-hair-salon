@@ -23,10 +23,10 @@ export const StylistCard = () => {
 
   return (
     <div className="grid place-items-center mt-4">
-      <div className=" scale-125 md:scale-100 md:mb-10 overflow-hidden">
+      <div className=" scale-125 md:scale-100 md:mb-10">
         <img src={Salon1} alt="salon-image1" />
       </div>
-      <div className=" grid md:grid-cols-2 lg:grid-cols-4 mt-20 md:mt-10 ">
+      <div className=" grid md:grid-cols-2 lg:grid-cols-4 mt-20 md:mb-16 md:mt-10 ">
         {data.map((info) => (
           <motion.div
             whileHover={{ scale: 1.1, originX: 0, originY: 0 }}
@@ -72,7 +72,7 @@ export const StylistCard = () => {
                 </div>
                 <div className="">
                   <Typography
-                    variant="subtitle2"
+                    variant="subtitle1"
                     sx={{ fontFamily: "monospace", textAlign: "center" }}
                   >
                     {info.snippet}

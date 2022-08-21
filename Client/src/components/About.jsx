@@ -38,9 +38,10 @@ export const About = () => {
     <motion.div ref={ref} animate={animation}>
       <ThemeProvider theme={theme}>
         <Typography
-          variant="h3"
+          variant="h2"
           textAlign="center"
-          sx={{ fontFamily: "monospace", mb: 5 }}
+          fontFamily="serif"
+          sx={{ mb: 5 }}
         >
           Trust no one else with the way you look.
         </Typography>

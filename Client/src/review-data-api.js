@@ -1,6 +1,6 @@
 import pic1 from  "../src/assets/reviewersWebp/1.webp"
-import pic2 from  "../src/assets/reviewersWebp/2.webp"
-import pic3 from  "../src/assets/reviewersWebp/3.webp"
+import pic2 from  "../src/assets/reviewersWebp/pic2.webp"
+import pic3 from  "../src/assets/reviewersWebp/pic3.webp"
 import pic4 from  "../src/assets/reviewersWebp/4.webp"
 import pic5 from  "../src/assets/reviewersWebp/5.webp"
 import pic6 from  "../src/assets/reviewersWebp/6.webp"
@@ -20,16 +20,16 @@ export const getReview = async () => {
     {
       _id: "2",
       image: pic2,
-      name: "Dinah G.",
-      review: "This was my first time getting my hair professionally colored, but Melissa put my fears to rest and gifted me with a subtle but beautiful blend of colors! The salon itself is cute and modern, with...",
+      name: "Susie C.",
+      review: "This is the best salon for your $$. From location,parking,safety protocols and the quality of work, this is the only salon I trust. My hair artist Erika is the best!! Whether you want a classic look...",
       date: "4/23/2021",
      
     },
     {
       _id: "3",
       image: pic3,
-      name: "Maritza N.",
-      review: "I've been coming to Affiniti Hair Salon since it opened. The salon is very nice, roomy, and safe (followed all COVID protocols).My review is specific for my hairstylist, Melissa. Melissa has been...",
+      name: "Hilda M.",
+      review: "I went for a long overdue hair cut and color. I was impressed by the measures being taken to prevent covid 19. Definitely felt secure the whole time I was there. The color turned out excellent...",
       date: "	8/1/2021",
      
     },
@@ -81,122 +81,5 @@ export const getReview = async () => {
       date: "	8/1/2021",
      
     },
-    // {
-    //   _id: "2",
-    //   image: alexis,
-    //   firstName: "Alexis",
-    //   lastName: "Taxass",
-    //   emoji: "🤤",
-    //   role: "Stylist/Colorist",
-    //   snippet: "A short sentance that describes themselves",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
-    // {
-    //   _id: "3",
-    //   image: yiny,
-    //   firstName: "Eva",
-    //   lastName: "Mendass",
-    //   emoji: "🕷",
-    //   role: "Stylist",
-    //   snippet: "Somthing short sentance that drives themselves",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
-    // {
-    //   _id: "4",
-    //   image: jmac,
-    //   firstName: "Dave",
-    //   lastName: "Davidson",
-    //   emoji: "🍄",
-    //   role: "Stylist/Barber",
-    //   snippet: "I am a short sentance that describes",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
-    // {
-    //   _id: "5",
-    //   image: mia,
-    //   firstName: "Mia",
-    //   lastName: "Khalid",
-    //   emoji: "🐉",
-    //   role: "Stylist/Colorist",
-    //   snippet: "I love a short sentance that describes myselves",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
-    // {
-    //   _id: "6",
-    //   image: starr,
-    //   firstName: "Starr",
-    //   lastName: "Lyte",
-    //   emoji: "💦",
-    //   role: "Eyebrows",
-    //   snippet: "This short array of words describes them",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
-    // {
-    //   _id: "7",
-    //   image: lena,
-    //   firstName: "Lena",
-    //   lastName: "Therug",
-    //   emoji: "🍒",
-    //   role: "Stylist",
-    //   snippet: "The small sentance that relates to themselves",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
-    // {
-    //   _id: "8",
-    //   image: abigail,
-    //   firstName: "Alena",
-    //   lastName: "Nalgala",
-    //   emoji: "🛼",
-    //   role: "Stylist/Colorist/Esthetician",
-    //   snippet: "I once had a sentance that described me",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
-    // {
-    //   _id: "9",
-    //   image: malkova,
-    //   firstName: "Lisa",
-    //   lastName: "Malkovass",
-    //   emoji: "🎀",
-    //   role: "Stylist",
-    //   snippet: "I am short man sentanced to themselves",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
-    // {
-    //   _id: "10",
-    //   image: violet,
-    //   firstName: "Violet",
-    //   lastName: "Michaels",
-    //   emoji: "🍑",
-    //   role: "Esthetician",
-    //   snippet: "This short sentance that describes Violet",
-    //   igLink: "",
-    //   twLink: "",
-    //   fbLink: "",
-    //   tikLink: ""
-    // },
   ];
 };
