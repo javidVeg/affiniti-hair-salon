@@ -15,7 +15,7 @@ export const Footer = () => {
         className=" bg-zinc-900"
       >
         <Container maxWidth="lg">
-          <Grid container spacing={8}>
+          <Grid container mb={10} spacing={8}>
             <Grid item xs={12} sm={4}>
               <Box
                 className="grid place-items-center"
