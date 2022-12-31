@@ -4,10 +4,12 @@ import { AiFillInstagram } from "react-icons/ai";
 import { getData } from "../profile-data-API";
 import { motion } from "framer-motion";
 import Salon1 from "../../src/assets/pngWebp/salon1.webp";
+import ApplyModal from "./ApplyModal/ApplyModal";
 
 export const StylistCard = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false)
 
   //? @ THIS GETS DATA FROM DATA SHEET
   useEffect(() => {
@@ -20,6 +22,7 @@ export const StylistCard = () => {
 
   if (isLoading) return <p>Loading...</p>;
   if (!data) return <p>No profile data</p>;
+  console.log(modalOpen)
 
   return (
     <div className="grid place-items-center mt-4">
@@ -36,7 +39,7 @@ export const StylistCard = () => {
           >
             <Card
               elevation={8}
-              sx={{ maxWidth: 345, height:400, opacity: "inherit", borderRadius: 2 }}
+              sx={{ maxWidth: 345, height: 400, opacity: "inherit", borderRadius: 2 }}
             >
               <div className="grid place-items-center m-6 ">
                 <Avatar
@@ -66,9 +69,9 @@ export const StylistCard = () => {
                 </div>
                 <div className="flex flex-row space-x-4 mt-1 mb-2">
                   <a href={info.igLink}>
-                    <AiFillInstagram size="25" /> 
+                    <AiFillInstagram size="25" />
                   </a>
-                  
+
                 </div>
                 <div className="">
                   <Typography
@@ -82,6 +85,13 @@ export const StylistCard = () => {
             </Card>
           </motion.div>
         ))}
+      </div>
+      <div className="apply">
+        <button onClick={() => {setModalOpen(true)}}>Join Whittiers Finest! ✂️</button>
+{/*vv_THIS IS TO SHOW THE MODAL WHEN BUTTON IS CLICKED && CLOSEMODAL SETS MODAL TO FALSE_vv*/}
+       { modalOpen && <ApplyModal closeModal={setModalOpen}/> }
+        
+      
       </div>
     </div>
   );
