@@ -1,5 +1,3 @@
-import andy from "../src/assets/peopleWebp/andy.webp";
-import cristol from "../src/assets/peopleWebp/cristol.webp";
 import erika from "../src/assets/peopleWebp/erika.webp";
 import momo from "../src/assets/peopleWebp/momo.webp";
 import natalie from "../src/assets/peopleWebp/natalie.webp";
@@ -24,18 +22,6 @@ export const getData = async () => {
       twLink: "",
       fbLink: "",
       tikLink: ""
-    },
-    {
-      _id: "1",
-      image: andy,
-      firstName: "Andy",
-      emoji: "🫀",
-      role: "Hair Stylist",
-      snippet: " Love is in the hair",
-      igLink: "https://www.instagram.com/Andyscosmo",
-      twLink: null,
-      fbLink: null,
-      tikLink: null
     },
     {
       _id: "3",

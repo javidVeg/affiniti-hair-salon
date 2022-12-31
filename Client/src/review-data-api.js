@@ -7,6 +7,10 @@ import pic6 from  "../src/assets/reviewersWebp/6.webp"
 import pic7 from  "../src/assets/reviewersWebp/7.webp"
 import pic8 from  "../src/assets/reviewersWebp/8.webp"
 import pic9 from  "../src/assets/reviewersWebp/9.webp"
+import pic10 from  "../src/assets/reviewersWebp/10.webp"
+import pic11 from  "../src/assets/reviewersWebp/11.webp"
+import pic12 from  "../src/assets/reviewersWebp/12.webp"
+import user from "../src/assets/reviewersWebp/user.webp"
 export const getReview = async () => {
   return [
     {
@@ -79,6 +83,30 @@ export const getReview = async () => {
       name: "Prim P.",
       review: "I have been Erika's customer for over 10 years. Because of Pandemic she is now move to Affiniti hair Salon which is a bit far from my house but of course she worths all the driving. Her experience and...",
       date: "	8/1/2021",
+     
+    },
+    {
+      _id: "10",
+      image: pic10,
+      name: "Jennyfer C.",
+      review: "This place is amazing. And the hair stylists are even more amazing! They all did excellent work and are the nicest people. I got tape in extensions for my wedding and even if I don't style them they... ",
+      date: "10/7/2022",
+     
+    },
+    {
+      _id: "11",
+      image: pic11,
+      name: "Nancy C.",
+      review: "My husband has been coming with Erika for many many years now & I have also got my hair color treatments & hair cuts with her too. She always makes you feel so relaxed & explains each step...",
+      date: "9/22/2022",
+     
+    },
+    {
+      _id: "12",
+      image: pic12,
+      name: "Prescila S.",
+      review: "I've been coming to Affiniti Hair Salon for a little over a year now. Monique V has been my hairstylist throughout the entire time and I swear I will never go to anyone else, but her My hair is a natural...",
+      date: "9/9/2022",
      
     },
   ];
