@@ -2,10 +2,22 @@ import React from 'react'
 import "../ApplyModal/ApplyModal.css"
 //!_vv CLOSEMODAL PROP SETS MODALOPEN TO FALSE vv_//
 const ApplyModal = ({closeModal}) => {
+
+//!_vv HANDLES CLICKS TO THE BACKGROUND AND NOT THE FORM vv_//
+ const handleBGClick = (e) => {
+    if( e.target.id === "bg")
+      closeModal(false)
+  } 
+
+//!_vv HANDLES CLICKS TO CLOSE FORM vv_//
+ const handleClick = () => {
+      closeModal(false)
+  } 
+
   return (
-    <div className=' z-40 fixed inset-0 bg-slate-500 justify-center items-center'>
+    <div id="bg" onClick={handleBGClick} className={'modal show-modal overscroll-contain h-screen w-screen z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'}>
       <div className="modal-container">
-        <button onClick={() => {closeModal(false)}}> X </button>
+        <button onClick={handleClick}> X </button>
         <div className="modal-title">Join the team!</div>
         <div className="modal-form">
           <form>
@@ -26,7 +38,7 @@ const ApplyModal = ({closeModal}) => {
             <label htmlFor="ig">Instagram</label>
             <input type="text" id="ig" name="ig" placeholder='Instagram'/>
             <textarea id="more-info" name="moreinfo" maxLength={100} placeholder="Who are some of your favorite stylist and why?"></textarea>
-          <input onClick={() => {closeModal(false)}} type="submit" value="Submit" />
+          <input onClick={handleClick} type="submit" value="Submit" />
           </form>
         </div>
         <div className="modal-footer"></div>

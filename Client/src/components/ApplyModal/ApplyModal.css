@@ -3,21 +3,19 @@
  flex-direction: column;
 }
 .modal{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(rgba(0, 0, 0, 0.5));
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ overflow-y: hidden;
+ color: blue;
+ height: 100vh;
+ 
 }
 .modal-container{
     width: 500px;
-    height: 650px;
+    height: 450px;
     background-color: white;
     box-shadow: 0px 5px 15px black;
     display: flex;
- 
     flex-direction: column;
     padding: 10px;
+    
+
 }

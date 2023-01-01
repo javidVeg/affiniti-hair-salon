@@ -22,6 +22,14 @@ export const StylistCard = () => {
 
   if (isLoading) return <p>Loading...</p>;
   if (!data) return <p>No profile data</p>;
+
+//!vv_ CONTROLS SCROLL WHILE MODAL IS OPEN OR CLOSED _vv//
+  if(modalOpen){
+    document.body.style.overflow = 'hidden'
+  }else{
+    document.body.style.overflow = 'scroll'
+  }
+
   console.log(modalOpen)
 
   return (
