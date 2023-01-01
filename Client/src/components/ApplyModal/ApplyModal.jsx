@@ -3,7 +3,7 @@ import "../ApplyModal/ApplyModal.css"
 //!_vv CLOSEMODAL PROP SETS MODALOPEN TO FALSE vv_//
 const ApplyModal = ({closeModal}) => {
   return (
-    <div className=' bg-slate-500 justify-center items-center w-screen h-screen'>
+    <div className=' z-40 fixed inset-0 bg-slate-500 justify-center items-center'>
       <div className="modal-container">
         <button onClick={() => {closeModal(false)}}> X </button>
         <div className="modal-title">Join the team!</div>
