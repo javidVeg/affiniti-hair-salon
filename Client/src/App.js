@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./App.css";
 import videoBG from "../src/assets/compressedHero.mp4";
 import AffinitiLogo from "../src/assets/pngWebp/Affiniti-Logo.webp";
@@ -39,7 +39,7 @@ function App() {
   locationCardAnimation();
 
   return (
-    <div>
+    <div >
       <Navbar />
       <section id="home" className="flex flex-col max-w-full overflow-hidden">
 

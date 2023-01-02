@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Salon1 from "../../src/assets/pngWebp/salon1.webp";
 import ApplyModal from "./ApplyModal/ApplyModal";
 
+
 export const StylistCard = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);

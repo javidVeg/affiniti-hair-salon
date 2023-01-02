@@ -15,7 +15,7 @@ const ApplyModal = ({closeModal}) => {
   } 
 
   return (
-    <div id="bg" onClick={handleBGClick} className={'modal show-modal overscroll-contain h-screen w-screen z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'}>
+    <div id="bg" onClick={handleBGClick} className='modal show-modal overscroll-contain h-screen w-screen z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
       <div className="modal-container">
         <button onClick={handleClick}> X </button>
         <div className="modal-title">Join the team!</div>
