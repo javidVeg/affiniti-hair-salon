@@ -7,12 +7,12 @@ const ApplyModal = ({ closeModal }) => {
 
   //!_vv HANDLES CLICKS TO THE BACKGROUND AND NOT THE FORM vv_//
   const handleBGClick = (e) => {
-    if (e.target.id === "bg"){
+    if (e.target.id === "bg") {
       modalRef.current.className = "modal-disappear overscroll-contain h-screen w-screen z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center"
       setTimeout(() => {
         closeModal(false);
-      },300)
-      
+      }, 300)
+
     }
   }
 
@@ -20,9 +20,9 @@ const ApplyModal = ({ closeModal }) => {
   const handleClick = (e) => {
     e.preventDefault();
     modalRef.current.className = "modal-disappear overscroll-contain h-screen w-screen z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center"
-      setTimeout(() => {
-        closeModal(false);
-      },300)
+    setTimeout(() => {
+      closeModal(false);
+    }, 300)
   }
 
   return (
@@ -32,10 +32,16 @@ const ApplyModal = ({ closeModal }) => {
         <div className="modal-title">Join the team!</div>
         <div className="modal-form">
           <form>
-            <label htmlFor="first-name">First Name</label>
-            <input type="text" id="first-name" name="firstname" placeholder='First name..' />
-            <label htmlFor="last-name">Last Name</label>
-            <input type="text" id="last-name" name="lastname" placeholder='Last name...' />
+            <div className="name">
+              <div>
+                <label htmlFor="first-name">First Name</label>
+                <input type="text" id="first-name" name="firstname" />
+              </div>
+              <div>
+                <label htmlFor="last-name">Last Name</label>
+                <input type="text" id="last-name" name="lastname"  />
+              </div>
+            </div>
             <label htmlFor="email">Email Address</label>
             <input type="text" id="email" name="email" placeholder='Email address..' />
             <label htmlFor="phone">Phone Number</label>
