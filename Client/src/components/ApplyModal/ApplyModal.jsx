@@ -1,4 +1,7 @@
 import React, { useRef } from 'react'
+import { Button } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
+import CloseIcon from '@mui/icons-material/Close';
 import "../ApplyModal/ApplyModal.css"
 //!_vv CLOSEMODAL PROP SETS MODALOPEN TO FALSE vv_//
 const ApplyModal = ({ closeModal }) => {
@@ -27,8 +30,20 @@ const ApplyModal = ({ closeModal }) => {
 
   return (
     <div id="bg" ref={modalRef} onClick={handleBGClick} className='modal-appear overscroll-contain h-screen w-screen z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
-      <div className="modal-container">
-        <button onClick={handleClick}> X </button>
+      <div className="modal-container ">
+        <div className="exit-button">
+          <Button
+            onClick={handleClick}
+            variant="text"
+            size="medium"
+            startIcon={<CloseIcon />}
+            sx={{
+              color: "black",
+              fontSize: 14,
+              "&:hover": { backgroundColor: "transparent", color: "red" },
+            }}
+          ></Button>
+        </div>
         <div className="modal-title">Join the team!</div>
         <div className="modal-form">
           <form>
@@ -43,7 +58,7 @@ const ApplyModal = ({ closeModal }) => {
               </div>
             </div>
             <div className="inputs">
-              <div>
+              <div className='email'>
                 <label htmlFor="email">Email Address</label>
                 <input type="text" id="email" name="email" />
               </div>
@@ -56,7 +71,7 @@ const ApplyModal = ({ closeModal }) => {
             </div>
 
             <label htmlFor="role" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">What Role are you interested in?</label>
-            <select id="role" name="roles" className="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <select id="role" name="roles" className="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50">
               <option selected value="Role of Interest">Choose a role</option>
               <option value="Hair Stylist">Hair Stylist</option>
               <option value="Hair Colorist">Hair Colorist</option>
@@ -74,7 +89,26 @@ const ApplyModal = ({ closeModal }) => {
               rows="3"
               class="block p-2.5 w-full text-sm">
             </textarea>
-            <input onClick={handleClick} type="submit" value="Submit" />
+            <div className="button-submit">
+              <Button
+                onClick={handleClick}
+                variant="contained"
+                type='submit'
+                size="medium"
+                startIcon={<SendIcon />}
+                sx={{
+                  marginTop: 1,
+                  width: "50%",
+                  color: "black",
+                  backgroundColor: "#ffe082",
+                  boxShadow: "10",
+                  fontSize: 14,
+                  "&:hover": { backgroundColor: "#ffe69b" },
+                }}
+              >
+                Submit
+              </Button>
+            </div>
           </form>
         </div>
         <div className="modal-footer"></div>

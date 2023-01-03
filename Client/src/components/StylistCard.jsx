@@ -3,6 +3,7 @@ import { Card, Typography, Avatar } from "@mui/material";
 import { AiFillInstagram } from "react-icons/ai";
 import { getData } from "../profile-data-API";
 import { motion } from "framer-motion";
+import { Button } from "@mui/material";
 import Salon1 from "../../src/assets/pngWebp/salon1.webp";
 import ApplyModal from "./ApplyModal/ApplyModal";
 
@@ -96,7 +97,27 @@ export const StylistCard = () => {
         ))}
       </div>
       <div className="apply">
-        <button onClick={() => {setModalOpen(true)}}>Join Whittiers Finest! ✂️</button>
+      <Button
+                onClick={() => {setModalOpen(true)}}
+                variant="contained"
+                type='submit'
+                size="large"
+                // startIcon={<SendIcon />}
+                sx={{
+                  marginTop: 1,
+                  width: "auto",
+                  color: "black",
+                  backgroundColor: "#ffe082",
+                  boxShadow: "10",
+                  fontSize: 18,
+                  marginBottom: 3,
+                  marginTop: -3,
+                  "&:hover": { backgroundColor: "#ffe69b" },
+                }}
+              >
+                Join Whittiers Finest! ✂️
+              </Button>
+        
 {/*vv_THIS IS TO SHOW THE MODAL WHEN BUTTON IS CLICKED && CLOSEMODAL SETS MODAL TO FALSE_vv*/}
        { modalOpen && <ApplyModal closeModal={setModalOpen}/> }
         

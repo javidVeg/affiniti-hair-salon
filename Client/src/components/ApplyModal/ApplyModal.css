@@ -1,105 +1,157 @@
-.modal-form form{
- display: flex;
- flex-direction: column;
+.modal-form form {
+    display: flex;
+    flex-direction: column;
 }
-.modal-appear{
+
+.modal-appear {
     animation: appear .2s ease-in forwards;
     opacity: 0;
 }
-.modal-disappear{
+
+.modal-disappear {
     animation: disappear .2s ease-in forwards;
     opacity: 1;
 }
 
 @keyframes appear {
-    100%{
+    100% {
         opacity: 1;
-        
-    }
-}
-@keyframes disappear {
-    100%{
-        opacity: 0;
-        
+
     }
 }
 
-.modal-container{
+@keyframes disappear {
+    100% {
+        opacity: 0;
+
+    }
+}
+
+.modal-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.modal-container {
     width: 500px;
-    height: 450px;
-    background-color: white;
+    height: auto;
     box-shadow: 0px 5px 15px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    border-radius: 10px;
+
+    background-image: linear-gradient(45deg,rgb(226, 237, 255),#fffde2,#f1e2fe,#e6fbd5 ) ;
+    background-size: 200% 400% ;
+    animation: gradient 8s  ease infinite ;
 }
-.inputs{
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.exit-button{
+    margin-right: -450px;
+}
+
+
+.email {
+    width: 75%
+}
+
+.inputs {
     display: flex;
     gap: 10px;
 }
-textarea:focus-within, .inputs div:focus-within{
-    border: 1px solid red;
-    
+
+textarea:focus-within,
+select:focus-within,
+.inputs div:focus-within {
+    border: 1px solid #ffe082;
 }
 
-.inputs input{
-    line-height: 25px; 
-   
+.inputs input {
+    line-height: 25px;
+
 }
-textarea{
+
+textarea {
     background-color: rgb(227, 227, 227);
     border-radius: 3px;
-    font-family: 'Courier New', Courier, monospace !important;
+    font-family: monospace !important;
     font-weight: 500;
-    
+
 }
-textarea:focus{
+
+textarea:focus {
     color: black;
     font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
-    padding-left: 5px;
     outline: none;
 }
-textarea::placeholder{
+
+textarea::placeholder {
     font-size: 1rem;
-    font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 1rem;
+    font-weight: 500;
+    font-family: monospace;
+    padding: .8rem;
     color: rgb(123, 122, 122) !important;
 }
 
-.inputs div, input{
+.inputs div,
+input {
     display: flex;
     flex-direction: column;
     background-color: rgb(227, 227, 227);
     border-radius: 3px;
     margin-bottom: 10px;
-    
+
 
 }
-.inputs input{
+
+.inputs input {
     margin: 0;
 }
-.inputs input:focus{
-   outline: none;
+
+select,
+.inputs input:focus {
+    outline: none;
 }
 
-label{
+label {
     font-size: .7rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     padding-left: 5px;
     padding-top: 5px;
 }
-.inputs input{
+
+.inputs input {
     color: black;
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
-    padding-left: 5px;
+    font-family: monospace;
     
+    padding-left: 5px;
+
 }
 
+.button-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+
+}
