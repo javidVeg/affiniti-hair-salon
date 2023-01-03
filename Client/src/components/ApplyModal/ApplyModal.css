@@ -35,24 +35,43 @@
     align-items: center;
     padding: 10px;
 }
-.name{
+.inputs{
     display: flex;
     gap: 10px;
 }
-
-.name input{
-    line-height: 25px; 
-}
-.modal-form input::placeholder {
-    font-size: .7rem;
-    padding-left: 20px;
-    margin-bottom: -20px;
-    color: black;
-    /* margin-left: 10px; */
-   
+textarea:focus-within, .inputs div:focus-within{
+    border: 1px solid red;
     
 }
-.name div, input{
+
+.inputs input{
+    line-height: 25px; 
+   
+}
+textarea{
+    background-color: rgb(227, 227, 227);
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: 500;
+    
+}
+textarea:focus{
+    color: black;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    padding-left: 5px;
+    outline: none;
+}
+textarea::placeholder{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    color: rgb(123, 122, 122) !important;
+}
+
+.inputs div, input{
     display: flex;
     flex-direction: column;
     background-color: rgb(227, 227, 227);
@@ -61,16 +80,26 @@
     
 
 }
-.name input{
+.inputs input{
     margin: 0;
 }
+.inputs input:focus{
+   outline: none;
+}
 
-.name label{
-    font-size: small;
+label{
+    font-size: .7rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     padding-left: 5px;
     padding-top: 5px;
-   
+}
+.inputs input{
+    color: black;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    padding-left: 5px;
     
 }
+
