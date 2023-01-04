@@ -1,12 +1,30 @@
 import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import { Button } from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import CloseIcon from '@mui/icons-material/Close';
 import "../ApplyModal/ApplyModal.css"
+
+
 //!_vv CLOSEMODAL PROP SETS MODALOPEN TO FALSE vv_//
 const ApplyModal = ({ closeModal }) => {
 
   const modalRef = useRef(null)
+
+  const formRef = useRef();
+
+//!_vv SENDS APPLICATION DATA TO OWNER EMAIL USING EMAILJS vv_//
+  const sendApp = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_yj2h9ir', 'template_sui26e8', formRef.current, 'WqyMbkG9cBUuCCGiX')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    handleClick();
+  };
 
   //!_vv HANDLES CLICKS TO THE BACKGROUND AND NOT THE FORM vv_//
   const handleBGClick = (e) => {
@@ -20,8 +38,8 @@ const ApplyModal = ({ closeModal }) => {
   }
 
   //!_vv HANDLES CLICKS TO CLOSE FORM vv_//
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleClick = () => {
+    // e.preventDefault();
     modalRef.current.className = "modal-disappear overscroll-contain h-screen w-screen z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center"
     setTimeout(() => {
       closeModal(false);
@@ -46,32 +64,32 @@ const ApplyModal = ({ closeModal }) => {
         </div>
         <div className="modal-title">Join the team!</div>
         <div className="modal-form">
-          <form>
+          <form ref={formRef} onSubmit={sendApp}>
             <div className="inputs">
               <div>
                 <label htmlFor="first-name">First Name</label>
-                <input type="text" id="first-name" name="firstname" />
+                <input type="text" id="first-name" name="user_first_name" />
               </div>
               <div>
                 <label htmlFor="last-name">Last Name</label>
-                <input type="text" id="last-name" name="lastname" />
+                <input type="text" id="last-name" name="user_last_name" />
               </div>
             </div>
             <div className="inputs">
               <div className='email'>
                 <label htmlFor="email">Email Address</label>
-                <input type="text" id="email" name="email" />
+                <input type="email" id="email" name="user_email" />
               </div>
             </div>
             <div className="inputs">
               <div>
                 <label htmlFor="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone" />
+                <input type="text" id="phone" name="user_phone" />
               </div>
             </div>
 
             <label htmlFor="role" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">What Role are you interested in?</label>
-            <select id="role" name="roles" className="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50">
+            <select id="role" name="user_role" type="radio" className="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50">
               <option selected value="Role of Interest">Choose a role</option>
               <option value="Hair Stylist">Hair Stylist</option>
               <option value="Hair Colorist">Hair Colorist</option>
@@ -81,17 +99,17 @@ const ApplyModal = ({ closeModal }) => {
             <div className="inputs">
               <div>
                 <label htmlFor="ig">Instagram</label>
-                <input type="text" id="ig" name="ig" />
+                <input type="text" id="ig" name="user_ig" />
               </div>
             </div>
-            <textarea id="more-info" name="moreinfo" maxLength={100}
+            <textarea id="more-info" name="user_more_info" maxLength={100}
               placeholder="Who are some of your favorite stylist and why?"
               rows="3"
-              class="block p-2.5 w-full text-sm">
+              className="block p-2.5 w-full text-sm">
             </textarea>
             <div className="button-submit">
               <Button
-                onClick={handleClick}
+                // onClick={handleClick}
                 variant="contained"
                 type='submit'
                 size="medium"
