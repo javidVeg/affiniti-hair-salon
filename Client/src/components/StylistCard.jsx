@@ -36,7 +36,7 @@ export const StylistCard = () => {
 
   return (
     <div className="grid place-items-center mt-4">
-      <div className=" scale-125 md:scale-100 md:mb-10">
+      <div className=" scale-125 md:scale-100 md:mb-10 shadow-black shadow-md">
         <img src={Salon1} alt="salon-image1" />
       </div>
       <div className=" grid md:grid-cols-2 lg:grid-cols-4 mt-20 md:mb-16 md:mt-10 ">
@@ -104,7 +104,6 @@ export const StylistCard = () => {
                 size="large"
                 // startIcon={<SendIcon />}
                 sx={{
-                  marginTop: 1,
                   width: "auto",
                   color: "black",
                   backgroundColor: "#ffe082",
@@ -113,6 +112,9 @@ export const StylistCard = () => {
                   marginBottom: 3,
                   marginTop: -3,
                   "&:hover": { backgroundColor: "#ffe69b" },
+                  '@media (max-width: 850px)' : {
+                    marginTop: 8,
+                  }
                 }}
               >
                 Join Whittiers Finest! ✂️

@@ -115,7 +115,8 @@ const ApplyModal = ({ closeModal }) => {
                 size="medium"
                 startIcon={<SendIcon />}
                 sx={{
-                  marginTop: 1,
+                  marginTop: 2,
+                  marginBottom: 1.5,
                   width: "50%",
                   color: "black",
                   backgroundColor: "#ffe082",

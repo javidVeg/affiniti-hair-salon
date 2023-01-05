@@ -9,7 +9,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export const About = () => {
-  //? @ CREATETHEME ALLOWS FOR RESPONSIVE FONT SIZES IN THEME PROVIDER
+  //? @ CREATE THEME ALLOWS FOR RESPONSIVE FONT SIZES IN THEME PROVIDER
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
 
@@ -65,16 +65,16 @@ export const About = () => {
             </Typography>
         </div>
         <div className=" px-10 mt-4">
-          <Typography textAlign="center">
+          <Typography fontSize={20} textAlign="center">
             Affiniti Hair Salon started as a small suite in Whittier in 2019 but
             with much work and determination we moved to a bigger location in
             Uptown Whittier and decided to expand and open the doors to talented
             hairstylists who would share the same vision. Affiniti means the
-            liking or love for something and that’s exactly what we have. We
+            liking or love for something and thats exactly what we have. We
             love doing hair, making the clients feel confident and we wanted to
             share that with our clients. Affiniti Hair Salon specializes in making the client feel more
             confident about a look that suits them. We believe that there are
-            numerous of wonderful colors out there, but our speciality is to do
+            numerous of wonderful colors out there, but our specialty is to do
             a color that is right for you. We believe everyone has the perfect
             looks that suit their skin tone, eye color, career, and lifestyle.
           </Typography>

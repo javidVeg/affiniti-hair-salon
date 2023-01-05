@@ -1,12 +1,23 @@
+import React, { useState } from "react";
 import { Link, Grid, Typography, Box, Container } from "@mui/material";
-import React from "react";
 import AffinitiLogo from "../assets/pngWebp/Affiniti-Logo-White.webp";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
 import { BsFillPinMapFill } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
+import ApplyModal from "./ApplyModal/ApplyModal";
 
 export const Footer = () => {
+  
+  const [modalOpen, setModalOpen] = useState(false)
+
+  //!vv_ CONTROLS SCROLL WHILE MODAL IS OPEN OR CLOSED _vv//
+  if(modalOpen){
+    document.body.style.overflow = 'hidden'
+  }else{
+    document.body.style.overflow = 'scroll'
+  }
+
   return (
     <footer className="w-full h-auto absolute left-0">
       <Box
@@ -44,9 +55,13 @@ export const Footer = () => {
               <Box className="m-3 grid place-items-center">
                 <Link
                   href="https://www.vagaro.com/affinitihairsalon/book-now"
-                  sx={{ color: "white" }}
+                  sx={{ color: "white", textAlign:"center"}}
                 >Make an appointment!
                 </Link>
+              </Box>
+              <Box className="m-3 grid place-items-center">
+                <Link onClick={() => {setModalOpen(true)}} sx={{ color: "white" }}>Careers</Link>
+              { modalOpen && <ApplyModal closeModal={setModalOpen}/> }
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>

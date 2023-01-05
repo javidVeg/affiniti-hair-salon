@@ -84,9 +84,9 @@ function App() {
 
         <section
           id="contact"
-          className=" mt-20 relative grid grid-cols-1 place-items-center -mb-11  h-screen w-screen"
+          className=" mt-10 relative grid grid-cols-1 place-items-center -mb-11  h-screen w-screen"
         >
-          <img src={Sand} alt="sand-image1" className="relative h-screen w-screen " />
+          <img src={Sand} alt="sand-image1" className="relative h-screen w-screen  " />
           <motion.div
             ref={ref}
             animate={animation}
