@@ -47,7 +47,7 @@ const ApplyModal = ({ closeModal }) => {
   }
 
   return (
-    <div id="bg" ref={modalRef} onClick={handleBGClick} className='modal-appear overscroll-contain h-screen w-screen z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
+    <div id="bg" ref={modalRef} onClick={handleBGClick} className='modal-appear overscroll-contain z-40 fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
       <div className="modal-container ">
         <div className="exit-button">
           <Button
@@ -90,7 +90,7 @@ const ApplyModal = ({ closeModal }) => {
 
             <label htmlFor="role" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">What Role are you interested in?</label>
             <select id="role" name="user_role" type="radio" className="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50">
-              <option selected value="Role of Interest">Choose a role</option>
+              <option defaultValue value="Role of Interest">Choose a role</option>
               <option value="Hair Stylist">Hair Stylist</option>
               <option value="Hair Colorist">Hair Colorist</option>
               <option value="Lash Artist">Lash Artist</option>
