@@ -68,23 +68,23 @@ const ApplyModal = ({ closeModal }) => {
             <div className="inputs">
               <div>
                 <label htmlFor="first-name">First Name</label>
-                <input type="text" id="first-name" name="user_first_name" />
+                <input style={{fontSize: "16px"}} type="text" id="first-name" name="user_first_name" />
               </div>
               <div>
                 <label htmlFor="last-name">Last Name</label>
-                <input type="text" id="last-name" name="user_last_name" />
+                <input style={{fontSize: "16px"}} type="text" id="last-name" name="user_last_name" />
               </div>
             </div>
             <div className="inputs">
               <div className='email'>
                 <label htmlFor="email">Email Address</label>
-                <input type="email" id="email" name="user_email" />
+                <input style={{fontSize: "16px"}} type="email" id="email" name="user_email" />
               </div>
             </div>
             <div className="inputs">
               <div>
                 <label htmlFor="phone">Phone Number</label>
-                <input type="text" id="phone" name="user_phone" />
+                <input style={{fontSize: "16px"}} type="text" id="phone" name="user_phone" />
               </div>
             </div>
 
@@ -99,10 +99,10 @@ const ApplyModal = ({ closeModal }) => {
             <div className="inputs">
               <div>
                 <label htmlFor="ig">Instagram</label>
-                <input type="text" id="ig" name="user_ig" />
+                <input style={{fontSize: "16px"}} type="text" id="ig" name="user_ig" />
               </div>
             </div>
-            <textarea id="more-info" name="user_more_info" maxLength={100}
+            <textarea style={{fontSize: "16px"}} id="more-info" name="user_more_info" maxLength={100}
               placeholder="Who are some of your favorite stylist and why?"
               rows="4"
               className="block p-2.5 w-full text-sm">
