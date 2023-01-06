@@ -104,7 +104,7 @@ const ApplyModal = ({ closeModal }) => {
             </div>
             <textarea id="more-info" name="user_more_info" maxLength={100}
               placeholder="Who are some of your favorite stylist and why?"
-              rows="3"
+              rows="4"
               className="block p-2.5 w-full text-sm">
             </textarea>
             <div className="button-submit">
