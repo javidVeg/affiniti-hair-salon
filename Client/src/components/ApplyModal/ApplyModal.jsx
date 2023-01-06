@@ -27,6 +27,17 @@ const ApplyModal = ({ closeModal }) => {
     theme: "light"
   });
 
+  const notifyError = () => toast.error('There seems to be an issue, please try again later! 🫤', {
+    position: "bottom-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    });
+
   //!_vv SENDS APPLICATION DATA TO OWNER EMAIL USING EMAILJS vv_//
   const sendApp = (e) => {
     e.preventDefault();
@@ -36,6 +47,7 @@ const ApplyModal = ({ closeModal }) => {
         notify();
         console.log(result.text);
       }, (error) => {
+        notifyError();
         console.log(error.text);
       });
     handleClick();
