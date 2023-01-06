@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://affinitihair.com/static/css/main.f0cb134c.css",
-    "main.js": "https://affinitihair.com/static/js/main.d1a38873.js",
+    "main.css": "https://affinitihair.com/static/css/main.1778b757.css",
+    "main.js": "https://affinitihair.com/static/js/main.6677ef40.js",
     "static/media/compressedHero.mp4": "https://affinitihair.com/static/media/compressedHero.8c49b535e1f1dade3e73.mp4",
     "static/media/hair4.webp": "https://affinitihair.com/static/media/hair4.ace0823877c401ea844f.webp",
     "static/media/hair2.webp": "https://affinitihair.com/static/media/hair2.eaeccc370fd59e2ee240.webp",
@@ -36,11 +36,11 @@
     "static/media/7.webp": "https://affinitihair.com/static/media/7.1211d5975a3b242b164e.webp",
     "static/media/user.webp": "https://affinitihair.com/static/media/user.52b4db9bfea39cbe441e.webp",
     "index.html": "https://affinitihair.com/index.html",
-    "main.f0cb134c.css.map": "https://affinitihair.com/static/css/main.f0cb134c.css.map",
-    "main.d1a38873.js.map": "https://affinitihair.com/static/js/main.d1a38873.js.map"
+    "main.1778b757.css.map": "https://affinitihair.com/static/css/main.1778b757.css.map",
+    "main.6677ef40.js.map": "https://affinitihair.com/static/js/main.6677ef40.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0cb134c.css",
-    "static/js/main.d1a38873.js"
+    "static/css/main.1778b757.css",
+    "static/js/main.6677ef40.js"
   ]
 }

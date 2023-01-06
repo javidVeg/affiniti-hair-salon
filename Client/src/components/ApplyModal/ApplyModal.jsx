@@ -88,7 +88,7 @@ const ApplyModal = ({ closeModal }) => {
               </div>
             </div>
 
-            <label htmlFor="role" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">What Role are you interested in?</label>
+            <label htmlFor="role" className="block mb-2 text-sm font-medium text-gray-900">What Role are you interested in?</label>
             <select id="role" name="user_role" type="radio" className="block w-full p-2 mb-6 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50">
               <option defaultValue value="Role of Interest">Choose a role</option>
               <option value="Hair Stylist">Hair Stylist</option>
