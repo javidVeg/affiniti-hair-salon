@@ -46,7 +46,7 @@ function App() {
         <section className=" hero ">
           <div className="texture"></div>
 
-          <video className="hero-video" src={videoBG} type="video/mp4" muted autoPlay="true" loop playsInline preload="true"  />
+          <video className="hero-video" src={videoBG} type="video/mp4" muted autoPlay loop playsInline preload="true"  />
             
 
           <div className="hero-logo grid place-items-center ">
