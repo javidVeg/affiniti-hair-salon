@@ -13,6 +13,9 @@ import { Reviews } from "./components/Reviews";
 import { Photos } from "./components/Photos";
 import Sand from "../src/assets/pngWebp/sand(1).webp";
 import { Navbar } from "./components/Navbar/Navbar";
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const { ref, inView } = useInView();
@@ -46,15 +49,15 @@ function App() {
         <section className=" hero ">
           <div className="texture"></div>
 
-          <video className="hero-video" src={videoBG} type="video/mp4" muted autoPlay loop playsInline preload="true"  />
-            
+          <video className="hero-video" src={videoBG} type="video/mp4" muted autoPlay loop playsInline preload="true" />
+
 
           <div className="hero-logo grid place-items-center ">
-            
+
             <img src={AffinitiLogo} alt="logo" width="80%" />
           </div>
 
-         
+
         </section>
 
         <section id="about">
@@ -99,11 +102,22 @@ function App() {
           </motion.div>
         </section>
 
-        
+
         <footer className="mt-10">
           <Footer />
         </footer>
       </section>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark" />
     </div>
   );
 }

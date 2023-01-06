@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://affinitihair.com/static/css/main.ca0dbb86.css",
-    "main.js": "https://affinitihair.com/static/js/main.afbf0627.js",
+    "main.js": "https://affinitihair.com/static/js/main.d0c71b9d.js",
     "static/media/compressedHero.mp4": "https://affinitihair.com/static/media/compressedHero.8c49b535e1f1dade3e73.mp4",
     "static/media/hair4.webp": "https://affinitihair.com/static/media/hair4.ace0823877c401ea844f.webp",
     "static/media/hair2.webp": "https://affinitihair.com/static/media/hair2.eaeccc370fd59e2ee240.webp",
@@ -37,10 +37,10 @@
     "static/media/user.webp": "https://affinitihair.com/static/media/user.52b4db9bfea39cbe441e.webp",
     "index.html": "https://affinitihair.com/index.html",
     "main.ca0dbb86.css.map": "https://affinitihair.com/static/css/main.ca0dbb86.css.map",
-    "main.afbf0627.js.map": "https://affinitihair.com/static/js/main.afbf0627.js.map"
+    "main.d0c71b9d.js.map": "https://affinitihair.com/static/js/main.d0c71b9d.js.map"
   },
   "entrypoints": [
     "static/css/main.ca0dbb86.css",
-    "static/js/main.afbf0627.js"
+    "static/js/main.d0c71b9d.js"
   ]
 }

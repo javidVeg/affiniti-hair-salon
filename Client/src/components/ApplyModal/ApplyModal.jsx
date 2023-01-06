@@ -4,6 +4,9 @@ import { Button } from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import CloseIcon from '@mui/icons-material/Close';
 import "../ApplyModal/ApplyModal.css"
+import { toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 
 //!_vv CLOSEMODAL PROP SETS MODALOPEN TO FALSE vv_//
@@ -13,15 +16,27 @@ const ApplyModal = ({ closeModal }) => {
 
   const formRef = useRef();
 
-//!_vv SENDS APPLICATION DATA TO OWNER EMAIL USING EMAILJS vv_//
+  const notify = () => toast.success("Application Submitted!! 🪩 💃🏻", {
+    position: "bottom-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark"
+  });
+
+  //!_vv SENDS APPLICATION DATA TO OWNER EMAIL USING EMAILJS vv_//
   const sendApp = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_yj2h9ir', 'template_sui26e8', formRef.current, 'WqyMbkG9cBUuCCGiX')
       .then((result) => {
-          console.log(result.text);
+        notify();
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
     handleClick();
   };
@@ -68,23 +83,23 @@ const ApplyModal = ({ closeModal }) => {
             <div className="inputs">
               <div>
                 <label htmlFor="first-name">First Name</label>
-                <input style={{fontSize: "16px"}} type="text" id="first-name" name="user_first_name" />
+                <input style={{ fontSize: "16px" }} type="text" id="first-name" name="user_first_name" />
               </div>
               <div>
                 <label htmlFor="last-name">Last Name</label>
-                <input style={{fontSize: "16px"}} type="text" id="last-name" name="user_last_name" />
+                <input style={{ fontSize: "16px" }} type="text" id="last-name" name="user_last_name" />
               </div>
             </div>
             <div className="inputs">
               <div className='email'>
                 <label htmlFor="email">Email Address</label>
-                <input style={{fontSize: "16px"}} type="email" id="email" name="user_email" />
+                <input style={{ fontSize: "16px" }} type="email" id="email" name="user_email" />
               </div>
             </div>
             <div className="inputs">
               <div>
                 <label htmlFor="phone">Phone Number</label>
-                <input style={{fontSize: "16px"}} type="text" id="phone" name="user_phone" />
+                <input style={{ fontSize: "16px" }} type="text" id="phone" name="user_phone" />
               </div>
             </div>
 
@@ -99,17 +114,17 @@ const ApplyModal = ({ closeModal }) => {
             <div className="inputs">
               <div>
                 <label htmlFor="ig">Instagram</label>
-                <input style={{fontSize: "16px"}} type="text" id="ig" name="user_ig" />
+                <input style={{ fontSize: "16px" }} type="text" id="ig" name="user_ig" />
               </div>
             </div>
-            <textarea style={{fontSize: "16px"}} id="more-info" name="user_more_info" maxLength={100}
+            <textarea style={{ fontSize: "16px" }} id="more-info" name="user_more_info"
               placeholder="Who are some of your favorite stylist and why?"
               rows="4"
               className="block p-2.5 w-full text-sm">
             </textarea>
             <div className="button-submit">
               <Button
-                // onClick={handleClick}
+                // onClick={notify}
                 variant="contained"
                 type='submit'
                 size="medium"
