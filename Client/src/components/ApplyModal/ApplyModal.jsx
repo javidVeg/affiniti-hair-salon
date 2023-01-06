@@ -24,7 +24,7 @@ const ApplyModal = ({ closeModal }) => {
     pauseOnHover: true,
     draggable: true,
     progress: undefined,
-    theme: "dark"
+    theme: "light"
   });
 
   //!_vv SENDS APPLICATION DATA TO OWNER EMAIL USING EMAILJS vv_//

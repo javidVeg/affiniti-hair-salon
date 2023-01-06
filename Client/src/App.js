@@ -13,7 +13,8 @@ import { Reviews } from "./components/Reviews";
 import { Photos } from "./components/Photos";
 import Sand from "../src/assets/pngWebp/sand(1).webp";
 import { Navbar } from "./components/Navbar/Navbar";
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, Slide } from 'react-toastify';
+
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -117,7 +118,9 @@ function App() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="dark" />
+        theme="light"
+        transition={Slide}
+         />
     </div>
   );
 }
